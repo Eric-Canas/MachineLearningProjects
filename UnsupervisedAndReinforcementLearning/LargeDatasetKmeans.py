@@ -1,3 +1,5 @@
+import numpy as np
+import math
 class RecursivePartitionKmeans:
     """Recursive Partition based K-Means clustering (RPKM).
     Read more in :ref:  Basu, S.; Banerjee, A. & Mooney, R. J.
@@ -135,10 +137,28 @@ class RecursivePartitionKmeans:
         self
             Fitted estimator.
         """
-
+        #--------------------------------------------------------------------------------------------
         #Step 1: Construct an initial partition of X, P, and define an initial set of K centroids, C.
-            #Step 1.1 Spatial Partition: Based on grid based RPKM (see section 2.4 (original paper))
-        P = self.partitionate_dataset(X, iter=1)
+            #Step 1.1: Spatial Partition: Based on grid based RPKM (see section 2.4 (original paper))
+
+        #Delimite the initial bounding box
+        self.bounding_box = np.array([[np.min(X[:,d]), np.max(X[:,d])]
+                                      for d in range(X.shape[-1])])
+        #Trick for avoiding to consider the limit point in a new partition (max_limit = max_limit-epsilon)
+        epsilon = np.finfo(X.dtype).resolution*10
+        X[X[..., [0, 1]] == self.bounding_box[:, 1]] -= epsilon
+        #Constraint: Partitions (with representatives) > K
+        weights = []
+        while(len(weights)< self.n_clusters):
+            # Get the partition correspondences (P) the representative of each centroid, and the weights (|S|)
+            P, representatives, weights = self.partitionate_dataset(X, iter=1)
+            #Step 1.2: Construct the initial set of K centroids
+        C = self.forgys_cluster_initialization(representatives,self.n_clusters)
+        C = self.weighted_lloyd(P=representatives,C=C,weights=weights)
+        # --------------------------------------------------------------------------------------------
+        #Step 2: Weighted Lloyd
+
+
         """
         self.cluster_centers_ = best_centers
         self.labels_ = best_labels
@@ -161,13 +181,66 @@ class RecursivePartitionKmeans:
         iteration : iteration in which the partitioning is done.
         Returns
         -------
-        self
             Array of arguments of len(X) where each positions refers to the Partition P in which the
             sample is assigned.
         """
+        """
+        Gives the correspondant position on the division of 2**i parts for each axis with flatten indexes.
+        Operation is performed for minimazing the memory allocation
+        Notes
+        -----
+        (X[:,d]-min_d)/((max_d-min_d)/(2**iter)): It gives in which segment of the dimension d, the
+        point is placed
+        ((2**iter)**d): It transforms the identifier to a flatten space ([1,1] --> [1,2])
+        Sum over axis 0: i.e [0,0] --> [0,0] = 0. [0,1] --> [0,2] = 2. [1,1] --> [1,2] = 3.
+        """
+        d_labels = np.sum(
+                        [((X[:,d]-min_d)/((max_d-min_d)/(2**iter))).astype(np.int)*((2**iter)**d)
+                        for d, (min_d, max_d) in enumerate(self.bounding_box)],
+                    axis=0)
+        filled_segments, weights = np.unique(d_labels, return_counts=True)
+        representatives = np.array(
+                                    [np.mean(X[d_labels==segment], axis=0)
+                                    for segment in filled_segments],
+                          dtype=X.dtype)
+        return d_labels, representatives, weights
 
-        pass
+    def weighted_lloyd(self, P, C, weights):
+        """
+        Compute the Weighted Lloyd algorithm for the Partition P, using C as initial clusters.
+        For the PRKM case, weights of P are defined as his cardinality (|S|)
+        and its representative as its center of mass (Sr = sum(X)/|S|).
+        Complexity of this proces is O(|P_i|Kd).
 
+        Parameters
+        ----------
+        P : array-like or sparse matrix, shape=(n_partitions, n_features)
+            Array of representatives of each P_i at the current iteration
+        C : array-like or matrix, shape=(K, n_features)
+            Clusters of the last iteration
+        weights : array-like or matrix, shape=(len(P))
+                  |S|
+        Returns
+        -------
+        Clusters (C) and Associations (G) which minimize the error
+        """
+        
+
+    def forgys_cluster_initialization(self,X, K):
+        """Get the Forgy's inicialization of clusters. Which is basically to select
+        randomly K Centroids from the given dataset in order to use it as centroids
+        Parameters
+        ----------
+        X : array-like or sparse matrix, shape=(n_samples, n_features)
+            Training instances to cluster. It must be noted that the data
+            will be converted to C ordering, which will cause a memory
+            copy if the given data is not C-contiguous.
+        K : Number of expected centroids
+        Returns
+        -------
+        Array of K x dimensions(X) features which represents the selected clusters.
+        """
+        return X[np.random.choice(len(X), size=K)]
     def fit_predict(self, X, y=None, sample_weight=None):
         """Compute cluster centers and predict cluster index for each sample.
         Convenience method; equivalent to calling fit(X) followed by
