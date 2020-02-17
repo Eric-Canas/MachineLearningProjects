@@ -1,11 +1,18 @@
 import numpy as np
+#If libraries are not installed, visualization would not be available
+try:
+    from sklearn.decomposition import PCA
+    from matplotlib import pyplot as plt
+    visualizable = True
+except:
+    visualizable = False
 
 class RecursivePartitionKmeans:
     """Recursive Partition based K-Means clustering (RPKM).
     Read more in :ref:  Basu, S.; Banerjee, A. & Mooney, R. J.
                         Semi-supervised Clustering by Seeding Proceedings
                         of the Nineteenth International Conference on Machine Learning,
-                        2002, 27-34
+                        2002, 27-34.
     Parameters
     ----------
     n_clusters : int, default=4
@@ -18,14 +25,14 @@ class RecursivePartitionKmeans:
     error_th : float, default=1e-4
         Min distance between C_{i-1} and C_i to consider convergence.
     verbose : int, default=False
-        Plot graphics at each step (It will provoke stops at each step)
+        Plot graphics at each step (It will provoke stops at each step).
 
     Attributes
     ----------
     cluster_centers_ : ndarray of shape (n_clusters, n_features)
         Coordinates of cluster centers.
     labels_ : ndarray of shape (n_samples,)
-        Labels of each point
+        Labels of each point in the training set.
     n_iter_ : int
         Number of iterations run.
     Notes
@@ -52,10 +59,19 @@ class RecursivePartitionKmeans:
         self.n_clusters = n_clusters
         self.max_iter = max_iter
         self.error_th = error_th
-        self.verbose = verbose
+        self.distance_operations = 0
+
+        if verbose and (not visualizable):
+            self.verbose = False
+            import warnings
+            warnings.warn("Verbose set to False given an error when importing"
+                          "sklearn or matplotlib libraries")
+        else:
+            self.verbose = verbose
 
     def fit(self, X, y=None):
-        """Compute Recursive Partition based k-means (RPKM) clustering.
+        """
+        Compute Recursive Partition based k-means (RPKM) clustering.
         Parameters
         ----------
         X : array-like or sparse matrix, shape=(n_samples, n_features)
@@ -66,8 +82,7 @@ class RecursivePartitionKmeans:
             Not used, present here for API (scikit-learn) consistency by convention.
         Returns
         -------
-        self
-            Fitted estimator.
+        self : Fitted estimator.
         """
         #--------------------------------------------------------------------------------------------
         #Step 1: Construct an initial partition of X, P, and define an initial set of K centroids, C.
@@ -82,7 +97,7 @@ class RecursivePartitionKmeans:
         #Constraint: Partitions (with representatives) > K
         weights = []
         iter = 1
-        while(len(weights)< self.n_clusters):
+        while(len(weights) < self.n_clusters):
             # Get the partition correspondences (P) the representative of each centroid, and the weights (|S|)
             P, representatives, weights = self.partitionate_dataset(X, iter=iter)
             iter += 1
@@ -101,14 +116,20 @@ class RecursivePartitionKmeans:
 
             # ----------------------------------------------------------------------------------------
             # Step 4: Weighted Lloyd
-            C_new, G = self.weighted_lloyd(P=representatives, C=C, weights=weights, thr=self.error_th)
+            C_new, _ = self.weighted_lloyd(P=representatives, C=C, weights=weights, thr=self.error_th)
             distance  = np.sum(np.abs(C_new-C))
-            iter += 1
             C = C_new
+            # ----------------------------------------------------------------------------------------
+            #Visualization if enabled
+            if self.verbose:
+                G_x, G_p = self.WL_assignment_step(P=X, C=C), self.WL_assignment_step(P=representatives, C=C)
+                self.visualize_state(X=X, P=representatives, C=C, G_x=G_x, G_p=G_p, iter=iter)
+            iter += 1
 
-        self.cluster_centers_ = C
-        self.labels_ = self.WL_assignment_step(P, C=C)
-        self.n_iter_ = iter-1
+        #Algorithm finished
+        self.cluster_centers = C
+        self.labels = self.WL_assignment_step(P=X, C=C)
+        self.n_iter = iter-1
 
         return self
 
@@ -127,17 +148,17 @@ class RecursivePartitionKmeans:
         iteration : iteration in which the partitioning is done.
         Returns
         -------
-            Array of arguments of len(X) where each positions refers to the Partition P in which the
-            sample is assigned.
+        Array of arguments of len(X) where each positions refers to the Partition P in which the
+        sample is assigned.
         """
         """
         Gives the correspondant position on the division of 2**i parts for each axis with flatten indexes.
-        Operation is performed for minimazing the memory allocation
+        Operation is performed for minimazing the memory allocation.
         Notes
         -----
         (X[:,d]-min_d)/((max_d-min_d)/(2**iter)): It gives in which segment of the dimension d, the
-        point is placed
-        ((2**iter)**d): It transforms the identifier to a flatten space ([1,1] --> [1,2])
+        point is placed.
+        ((2**iter)**d): It transforms the identifier to a flatten space ([1,1] --> [1,2]).
         Sum over axis 0: i.e [0,0] --> [0,0] = 0. [0,1] --> [0,2] = 2. [1,1] --> [1,2] = 3.
         """
         d_labels = np.sum(
@@ -157,25 +178,24 @@ class RecursivePartitionKmeans:
         For the PRKM case, weights of P are defined as his cardinality (|S|)
         and its representative as its center of mass (Sr = sum(X)/|S|).
         Complexity of this proces is O(|P_i|Kd).
-
         Parameters
         ----------
         P : array-like or sparse matrix, shape=(n_partitions, n_features)
-            Array of representatives of each P_i at the current iteration
+            Array of representatives of each P_i at the current iteration.
         C : array-like or matrix, shape=(K, n_features)
-            Clusters of the last iteration
+            Clusters of the last iteration.
         weights : array-like or matrix, shape=(len(P))
-                  |S|
+                  |S|.
         thr : distance thr over the evolution of cluster for considered as converged.
               If set to negative value, no stop condition other than max_iterations.
         Returns
         -------
-        Clusters (C) which minimize the error Associations (G)
+        Clusters (C) which minimize the error Associations (G).
         """
         #Step 0 : Initial Assignment
         G = self.WL_assignment_step(P, C=C)
 
-        distance, r = thr+1, 0
+        distance, r = thr+1., 0
         while r<self.max_iter and distance>thr:
             #Step 1: Update Step (C_r <- G_{r-1})
             C_new = self.WL_update_step(P=P, G=G, weights=weights, C=C)
@@ -196,16 +216,16 @@ class RecursivePartitionKmeans:
         Parameters
         ----------
         P : array-like or sparse matrix, shape=(n_partitions, n_features)
-            Array of representatives of each P_i at the current iteration
+            Array of representatives of each P_i at the current iteration.
         G : array-like, shape=(n_partitions)
-            Array with the closest cluster id for each point
+            Array with the closest cluster id for each point.
         weights : array-like or matrix, shape=(len(P))
-                  |S|
+                  |S|.
         C : array-like or matrix, shape=(K, n_features)
-            Clusters of the last iteration
+            Clusters of the last iteration.
         Returns
         -------
-        Clusters (C) updated
+        Clusters (C) updated.
         """
         C_new = np.array(C, copy=True)
         for moved_cluster_id in np.unique(G):
@@ -222,9 +242,9 @@ class RecursivePartitionKmeans:
         P : array-like or sparse matrix, shape=(n_partitions, n_features)
             Array of representatives of each P_i at the current iteration
         weights : array-like or matrix, shape=(len(P))
-                  |S|
+                  |S|.
         C : array-like or matrix, shape=(K, n_features)
-            Clusters of the last iteration
+            Clusters of the last iteration.
         Returns
         -------
         New Associations (G)
@@ -240,33 +260,36 @@ class RecursivePartitionKmeans:
         Parameters
         ----------
         points : array-like or sparse matrix, shape=(n_points, n_features)
-                Array of points
+                Array of points.
         centroid : array-like or matrix, shape=(n_features)
-                   Given cluster
+                   Given cluster.
         Returns
         -------
-        Array of distances
+        Array of distances.
         """
+        self.distance_operations += len(points)
         return np.sqrt(np.sum(np.square((points - centroid)), axis=1))
 
     def forgys_cluster_initialization(self,X, K):
         """Get the Forgy's inicialization of clusters. Which is basically to select
-        randomly K Centroids from the given dataset in order to use it as centroids
+        randomly K Centroids from the given dataset in order to use it as centroids.
         Parameters
         ----------
         X : array-like or sparse matrix, shape=(n_samples, n_features)
             Training instances to cluster. It must be noted that the data
             will be converted to C ordering, which will cause a memory
             copy if the given data is not C-contiguous.
-        K : Number of expected centroids
+        K : Integer
+            Number of expected centroids,
         Returns
         -------
         Array of K x dimensions(X) features which represents the selected clusters.
         """
-        return X[np.random.choice(len(X), size=K)]
+        return X[np.random.choice(len(X), size=K,replace=False)]
 
     def fit_predict(self, X, y=None):
-        """Compute cluster centers and predict cluster index for each sample.
+        """
+        Compute cluster centers and predict cluster index for each sample.
         Convenience method; equivalent to calling fit(X) followed by
         predict(X).
         Parameters
@@ -278,13 +301,14 @@ class RecursivePartitionKmeans:
         Returns
         -------
         labels : array, shape [n_samples,]
-            Index of the cluster each sample belongs to.
+                 Index of the cluster each sample belongs to.
         """
         return self.fit(X).labels
 
     def predict(self, X):
-        """Predict the closest cluster each sample in X belongs to.
-        In the vector quantization literature, `cluster_centers_` is called
+        """
+        Predict the closest cluster each sample in X belongs to.
+        In the vector quantization literature, `cluster_centers` is called
         the code book and each value returned by `predict` is the index of
         the closest code in the code book.
         Parameters
@@ -297,11 +321,66 @@ class RecursivePartitionKmeans:
             Index of the cluster each sample belongs to.
         """
 
-        """
-        check_is_fitted(self)
+        self.check_is_fitted()
+        return self.WL_assignment_step(P=X, C=self.cluster_centers)
 
-        X = self._check_test_data(X)
-        x_squared_norms = row_norms(X, squared=True)
-        return _labels_inertia(X, sample_weight, x_squared_norms,
-                               self.cluster_centers_)[0]
+    def check_is_fitted(self):
         """
+        Check if the algorithm is already fitted. If not, raises an error.
+        Returns
+        -------
+        No return
+        """
+        if not hasattr(self,'cluster_centers'):
+            raise Exception("Impossible to predict. Algorithm not fitted")
+
+    def visualize_state(self,X, P, C, G_x, G_p, iter):
+        """
+        Visualize the state of the algorithm. His points, his divisions, his representatives,
+        and the current clusters.
+        Parameters
+        ----------
+        X : array-like or sparse matrix, shape=(n_points, n_features)
+            Array of points (original dataset).
+        P : array-like or matrix, shape=(n_representatives, n_features)
+            Array of points (representatitives).
+            weights : array-like or matrix, shape=(n_representatives)
+            The current weight correspondant to each representative (P).
+        C : array-like or matrix, shape=(n_clusters)
+            Current centroids.
+        G_x : array-like of integers, shape=(n_points)
+            Labels of each X point, corresponding to the cluster where
+            each point belongs.
+        G_p : array-like of integers, shape=(n_representatives)
+              Labels of each P point, corresponding to the cluster where
+              each point belongs.
+        iter : The current iteration.
+        Returns
+        -------
+        Plot a 2D graphic of the current state.
+        In case of the data being greater than 2D apply PCA over points and do not show C.
+        """
+        #Reduce the dimensionality of data for visualization through PCA
+        bounding_box = self.bounding_box
+        if X.shape[-1]>2:
+            pca = PCA(n_components=2).fit(X)
+            X, P, bounding_box = pca.transform(X), pca.transform(P), pca.transform(bounding_box)
+        #Plot all points and the clusters where they belong, as well as representatives
+        for i, centroid in enumerate(C):
+            points_of_cluster, representatives_of_cluster = X[G_x==i], P[G_p==i]
+            plt.plot(points_of_cluster[:,0], points_of_cluster[:,1],
+                     'o', color='C'+str(i), alpha=0.4)
+            plt.plot(representatives_of_cluster[:, 0], representatives_of_cluster[:, 1],
+                     'o', color='C'+str(i), alpha=1)
+        #Plot the lines which divides the Partitions (P)
+        y_axis_cuts, x_axis_cuts = [np.linspace(box[0],box[1],(2**iter)+1) for box in bounding_box]
+        for line in y_axis_cuts:
+            plt.plot([x_axis_cuts[0], x_axis_cuts[-1]],[line, line], color='black')
+        for line in y_axis_cuts:
+            plt.plot([line, line], [y_axis_cuts[0], y_axis_cuts[-1]], color='black')
+
+        for i, centroid in enumerate(C):
+            plt.plot(centroid[0], centroid[1], 'x', color='black', markeredgewidth=11)
+            plt.plot(centroid[0], centroid[1], 'x', color='C'+str(i), markeredgewidth=5)
+        plt.title("Iteration "+str(iter))
+        plt.show()
