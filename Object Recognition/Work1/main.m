@@ -7,10 +7,11 @@ features = ["SURF", "KAZE", "FREAK", "BRISK", "Block"]; %"ORB", ;
 distortions = ["Rotation", "Scaling", "Projection", "Blurring",...
                 "Intensity", "Contrast"];
 %Images where try it
-image_paths = ["images/letters.jpg", "images/letters.jpg"];
-            
-for image_path = image_paths
-    img = imread(image_path);
+files = dir('images/');
+files = files(3:size(files)).name;
+for image_path = files
+    sprintf(image_path)
+    img = imread("images/"+image_path);
     for distortion = distortions
         distorted_img = distortImage(img, distortion);
         for descriptor = descriptors
