@@ -11,6 +11,8 @@ defaultProjectionMatrix = projective2d([cosd(theta) -sind(theta) 0.0001;...
 
 %Applying
 switch distortion
+    case "None"
+        distortedImg = img;
     case "Scaling"
         distortedImg = imresize(img, scalingDefaultResize);
     case "Rotation"
@@ -22,7 +24,6 @@ switch distortion
     case "Intensity"
         distortedImg = imlocalbrighten(img);
     case "Contrast"
-        distortedImg = imadjust(img,[0., 1.]);
-                                
+        distortedImg = imadjust(img,[0., 1.]);                                
 end
 

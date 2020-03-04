@@ -1,4 +1,5 @@
 import numpy as np
+
 #If libraries are not installed, visualization would not be available
 try:
     from sklearn.decomposition import PCA
@@ -8,7 +9,8 @@ except:
     visualizable = False
 
 class RecursivePartitionKmeans:
-    """Recursive Partition based K-Means clustering (RPKM).
+    """
+    Recursive Partition based K-Means clustering (RPKM).
     Read more in :ref:  Basu, S.; Banerjee, A. & Mooney, R. J.
                         Semi-supervised Clustering by Seeding Proceedings
                         of the Nineteenth International Conference on Machine Learning,
@@ -55,11 +57,12 @@ class RecursivePartitionKmeans:
     """
 
     def __init__(self, n_clusters=4, max_iter=300, error_th = 1e-5,
-                 verbose=False):
+                 verbose=False, count_operations = True):
         self.n_clusters = n_clusters
         self.max_iter = max_iter
         self.error_th = error_th
         self.distance_operations = 0
+        self.count_operations = count_operations
 
         if verbose and (not visualizable):
             self.verbose = False
@@ -104,7 +107,10 @@ class RecursivePartitionKmeans:
 
         #Step 1.2: Construct the initial set of K centroids
         C = self.forgys_cluster_initialization(representatives,self.n_clusters)
-
+        if self.verbose:
+            G_x, G_p = self.WL_assignment_step(P=X, C=C), self.WL_assignment_step(P=representatives, C=C,
+                                                                                  count_operations=False)
+            self.visualize_state(X=X, P=representatives, C=C, G_x=G_x, G_p=G_p, iter=iter-1)
         # --------------------------------------------------------------------------------------------
         # Step 2: Initial Weighted Lloyd
         C, G = self.weighted_lloyd(P=representatives,C=C,weights=weights,thr=self.error_th)
@@ -122,16 +128,39 @@ class RecursivePartitionKmeans:
             # ----------------------------------------------------------------------------------------
             #Visualization if enabled
             if self.verbose:
-                G_x, G_p = self.WL_assignment_step(P=X, C=C), self.WL_assignment_step(P=representatives, C=C)
+                G_x, G_p = self.WL_assignment_step(P=X, C=C), self.WL_assignment_step(P=representatives, C=C,count_operations=False)
                 self.visualize_state(X=X, P=representatives, C=C, G_x=G_x, G_p=G_p, iter=iter)
             iter += 1
 
         #Algorithm finished
         self.cluster_centers = C
-        self.labels = self.WL_assignment_step(P=X, C=C)
+        self.labels = self.WL_assignment_step(P=X, C=C, count_operations = False)
         self.n_iter = iter-1
 
         return self
+
+    def get_inertia(self, X, labels = None):
+        """
+        Compute the sum of square errors resulting from the fitting.
+
+        Parameters
+        ----------
+        X : array-like or sparse matrix, shape=(n_samples, n_features)
+            Training instances to cluster. It must be noted that the data
+            will be converted to C ordering, which will cause a memory
+            copy if the given data is not C-contiguous.
+        labels : Labels assigned to each point of X. If None (default value)
+                 it calculates when called.
+        Returns
+        -------
+        Float value of inertia
+        """
+        self.check_is_fitted()
+        if labels is None:
+            labels = self.WL_assignment_step(P=X, C=self.cluster_centers, count_operations=False)
+        distances = [np.sum(self.euclidean_distance(points=X[labels==i], centroid=centroid, count_operations=False))
+                              for i, centroid in enumerate(self.cluster_centers)]
+        return np.sum(distances)
 
     def partitionate_dataset(self, X, iter):
         """
@@ -172,7 +201,7 @@ class RecursivePartitionKmeans:
                           dtype=X.dtype)
         return d_labels, representatives, weights
 
-    def weighted_lloyd(self, P, C, weights, thr = 0.):
+    def weighted_lloyd(self, P, C, weights, thr = 0., count_operations = True):
         """
         Compute the Weighted Lloyd algorithm for the Partition P, using C as initial clusters.
         For the PRKM case, weights of P are defined as his cardinality (|S|)
@@ -193,7 +222,7 @@ class RecursivePartitionKmeans:
         Clusters (C) which minimize the error Associations (G).
         """
         #Step 0 : Initial Assignment
-        G = self.WL_assignment_step(P, C=C)
+        G = self.WL_assignment_step(P, C=C, count_operations=count_operations)
 
         distance, r = thr+1., 0
         while r<self.max_iter and distance>thr:
@@ -201,7 +230,7 @@ class RecursivePartitionKmeans:
             C_new = self.WL_update_step(P=P, G=G, weights=weights, C=C)
 
             #Step 2: Assignment Step (G_r <- C_r)
-            G = self.WL_assignment_step(P, C=C_new)
+            G = self.WL_assignment_step(P, C=C_new,count_operations=count_operations)
 
             #Update variables and constraints
             distance  = np.sum(np.abs(C_new-C))
@@ -234,7 +263,7 @@ class RecursivePartitionKmeans:
             C_new[moved_cluster_id] = np.sum((c_points.T*c_weights),axis=1)/np.sum(c_weights)
         return C_new
 
-    def WL_assignment_step(self, P, C):
+    def WL_assignment_step(self, P, C, count_operations = True):
         """
         Compute the assignment step of Weighted Lloyd algorithm for the Partition P, using C as initial clusters.
         Parameters
@@ -250,11 +279,11 @@ class RecursivePartitionKmeans:
         New Associations (G)
         """
 
-        distances = np.array([self.euclidean_distance(points=P, centroid=centroid) for centroid in C])
+        distances = np.array([self.euclidean_distance(points=P, centroid=centroid, count_operations=count_operations) for centroid in C])
         G = np.argmin(distances, axis=0)
         return G
 
-    def euclidean_distance(self, points, centroid):
+    def euclidean_distance(self, points, centroid, count_operations = True):
         """
         Compute the euclidean distance between a set of points and a centroid.
         Parameters
@@ -267,7 +296,8 @@ class RecursivePartitionKmeans:
         -------
         Array of distances.
         """
-        self.distance_operations += len(points)
+        if count_operations:
+            self.distance_operations += len(points)
         return np.sqrt(np.sum(np.square((points - centroid)), axis=1))
 
     def forgys_cluster_initialization(self,X, K):
@@ -332,7 +362,7 @@ class RecursivePartitionKmeans:
         No return
         """
         if not hasattr(self,'cluster_centers'):
-            raise Exception("Impossible to predict. Algorithm not fitted")
+            raise Exception("Algorithm not fitted")
 
     def visualize_state(self,X, P, C, G_x, G_p, iter):
         """

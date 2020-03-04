@@ -4,14 +4,12 @@ descriptors = ["FAST", "MinEigen", "Harris", "SURF", "KAZE",...
 %Feature extractors to use and compare
 features = ["SURF", "KAZE", "FREAK", "BRISK", "Block"]; %"ORB", ;
 %Distorsions to be applied
-distortions = ["Rotation", "Scaling", "Projection", "Blurring",...
+distortions = ["None", "Rotation", "Scaling", "Projection", "Blurring",...
                 "Intensity", "Contrast"];
 %Images where try it
 files = dir('images/');
-files = files(3:size(files)).name;
-for image_path = files
-    sprintf(image_path)
-    img = imread("images/"+image_path);
+for n = 3:size(dir('images/'))
+    img = imread("images/"+files(n).name);
     for distortion = distortions
         distorted_img = distortImage(img, distortion);
         for descriptor = descriptors
@@ -20,8 +18,7 @@ for image_path = files
                 [feat_img, validPointsImg] = featureExtractor(img, corners, feature);
                 [feat_dist, validPointsDist] = featureExtractor(distorted_img, corners, feature);
                 title = descriptor+" Descriptors with "+feature+...
-                " Features. Distortion "+distortion+". "+... 
-                "[Press any key to go next]";
+                " Features. Distortion "+distortion+". ";
                 [matchMetric] = matchAndShow(img, distorted_img,...
                                             feat_img,feat_dist,...
                                             validPointsImg, validPointsDist,...

@@ -1,0 +1,600 @@
+DATASET: eb.npy
+	RPKM:
+		Clusters: 4
+			Time: 0.15458s
+			Operations: 8872.0
+			Inertia: 8767.2
+			Iterations: 4.0
+
+		Clusters: 8
+			Time: 32.16843s
+			Operations: 18010965.3
+			Inertia: 6253.1
+			Iterations: 12.0
+
+		Clusters: 12
+			Time: 33.27778s
+			Operations: 37840012.0
+			Inertia: 5138.1
+			Iterations: 12.0
+
+		Clusters: 16
+			Time: 37.1424s
+			Operations: 108810778.7
+			Inertia: 4372.3
+			Iterations: 12.0
+
+		Clusters: 20
+			Time: 35.55798s
+			Operations: 80924380.0
+			Inertia: 3934.8
+			Iterations: 12.0
+
+		Clusters: 24
+			Time: 40.49348s
+			Operations: 126191664.0
+			Inertia: 3586.1
+			Iterations: 12.3
+
+		Clusters: 28
+			Time: 46.3548s
+			Operations: 250834518.7
+			Inertia: 3316.7
+			Iterations: 12.0
+
+		Clusters: 32
+			Time: 45.40334s
+			Operations: 201594474.7
+			Inertia: 3097.4
+			Iterations: 12.3
+
+		Clusters: 36
+			Time: 44.42557s
+			Operations: 228363408.0
+			Inertia: 2918.9
+			Iterations: 12.0
+
+		Clusters: 40
+			Time: 46.5617s
+			Operations: 226898546.7
+			Inertia: 2768.3
+			Iterations: 12.3
+
+		Clusters: 44
+			Time: 46.90614s
+			Operations: 231496305.3
+			Inertia: 2640.1
+			Iterations: 12.3
+
+		Clusters: 48
+			Time: 53.16723s
+			Operations: 359487920.0
+			Inertia: 2520.4
+			Iterations: 12.0
+
+		Clusters: 52
+			Time: 55.22172s
+			Operations: 356882534.7
+			Inertia: 2419.9
+			Iterations: 12.3
+
+		Clusters: 56
+			Time: 51.88597s
+			Operations: 339464085.3
+			Inertia: 2328.9
+			Iterations: 12.0
+
+		Clusters: 60
+			Time: 62.25436s
+			Operations: 453725540.0
+			Inertia: 2242.6
+			Iterations: 12.0
+
+		Clusters: 64
+			Time: 42.06392s
+			Operations: 310794218.7
+			Inertia: 2175.0
+			Iterations: 9.7
+
+		Clusters: 68
+			Time: 58.0591s
+			Operations: 412686242.7
+			Inertia: 2113.0
+			Iterations: 12.0
+
+		Clusters: 72
+			Time: 70.45533s
+			Operations: 569315928.0
+			Inertia: 2049.6
+			Iterations: 12.3
+
+		Clusters: 76
+			Time: 74.8788s
+			Operations: 670166606.7
+			Inertia: 1994.4
+			Iterations: 12.0
+
+		Clusters: 80
+			Time: 81.49368s
+			Operations: 741131226.7
+			Inertia: 1939.7
+			Iterations: 12.3
+
+		Clusters: 84
+			Time: 75.38018s
+			Operations: 675821552.0
+			Inertia: 1897.3
+			Iterations: 12.0
+
+		Clusters: 88
+			Time: 75.63337s
+			Operations: 651329272.0
+			Inertia: 1846.8
+			Iterations: 12.3
+
+		Clusters: 92
+			Time: 78.48641s
+			Operations: 713179001.3
+			Inertia: 1805.6
+			Iterations: 12.0
+
+		Clusters: 96
+			Time: 96.46511s
+			Operations: 989497088.0
+			Inertia: 1770.8
+			Iterations: 12.0
+
+		Clusters: 100
+			Time: 90.04711s
+			Operations: 882332766.7
+			Inertia: 1734.4
+			Iterations: 12.0
+
+		Clusters: 104
+			Time: 97.46587s
+			Operations: 984517733.3
+			Inertia: 1695.4
+			Iterations: 12.0
+
+		Clusters: 108
+			Time: 83.06745s
+			Operations: 756372888.0
+			Inertia: 1662.9
+			Iterations: 12.3
+
+		Clusters: 112
+			Time: 82.57206s
+			Operations: 739093525.3
+			Inertia: 1634.1
+			Iterations: 12.3
+
+		Clusters: 116
+			Time: 74.34278s
+			Operations: 625787017.3
+			Inertia: 1607.9
+			Iterations: 12.3
+
+		Clusters: 120
+			Time: 79.98688s
+			Operations: 744181200.0
+			Inertia: 1579.0
+			Iterations: 12.0
+
+		Clusters: 124
+			Time: 92.90082s
+			Operations: 930938721.3
+			Inertia: 1556.0
+			Iterations: 12.0
+
+		Clusters: 128
+			Time: 123.47532s
+			Operations: 1376098688.0
+			Inertia: 1524.9
+			Iterations: 12.0
+
+	Kmeans++:
+		Clusters: 4
+			Time: 0.15464s
+			Operations: 2014364.0
+			Inertia: 1909.7
+			Iterations: 11.0
+
+		Clusters: 8
+			Time: 0.37879s
+			Operations: 8789952.0
+			Inertia: 988.9
+			Iterations: 24.0
+
+		Clusters: 12
+			Time: 0.65962s
+			Operations: 16847408.0
+			Inertia: 662.2
+			Iterations: 30.7
+
+		Clusters: 16
+			Time: 0.97011s
+			Operations: 27834848.0
+			Inertia: 481.8
+			Iterations: 38.0
+
+		Clusters: 20
+			Time: 0.91281s
+			Operations: 25332153.3
+			Inertia: 385.4
+			Iterations: 27.7
+
+		Clusters: 24
+			Time: 1.44284s
+			Operations: 42484768.0
+			Inertia: 321.8
+			Iterations: 38.7
+
+		Clusters: 28
+			Time: 1.49081s
+			Operations: 43583512.0
+			Inertia: 273.5
+			Iterations: 34.0
+
+		Clusters: 32
+			Time: 2.86237s
+			Operations: 89852842.7
+			Inertia: 238.6
+			Iterations: 61.3
+
+		Clusters: 36
+			Time: 2.08214s
+			Operations: 62628408.0
+			Inertia: 212.5
+			Iterations: 38.0
+
+		Clusters: 40
+			Time: 1.95388s
+			Operations: 57989266.7
+			Inertia: 190.6
+			Iterations: 31.7
+
+		Clusters: 44
+			Time: 3.55163s
+			Operations: 113475838.7
+			Inertia: 173.5
+			Iterations: 56.3
+
+		Clusters: 48
+			Time: 3.68422s
+			Operations: 120129344.0
+			Inertia: 158.5
+			Iterations: 54.7
+
+		Clusters: 52
+			Time: 3.98139s
+			Operations: 131727197.3
+			Inertia: 145.8
+			Iterations: 55.3
+
+		Clusters: 56
+			Time: 4.94217s
+			Operations: 160660789.3
+			Inertia: 135.0
+			Iterations: 62.7
+
+		Clusters: 60
+			Time: 4.18827s
+			Operations: 136427380.0
+			Inertia: 125.7
+			Iterations: 49.7
+
+		Clusters: 64
+			Time: 5.03145s
+			Operations: 165055765.3
+			Inertia: 118.2
+			Iterations: 56.3
+
+		Clusters: 68
+			Time: 6.47863s
+			Operations: 219992965.3
+			Inertia: 110.6
+			Iterations: 70.7
+
+		Clusters: 72
+			Time: 6.20112s
+			Operations: 210958848.0
+			Inertia: 104.6
+			Iterations: 64.0
+
+		Clusters: 76
+			Time: 4.07333s
+			Operations: 133375313.3
+			Inertia: 98.9
+			Iterations: 38.3
+
+		Clusters: 80
+			Time: 6.33704s
+			Operations: 217307146.7
+			Inertia: 93.7
+			Iterations: 59.3
+
+		Clusters: 84
+			Time: 4.98048s
+			Operations: 164079104.0
+			Inertia: 89.3
+			Iterations: 42.7
+
+		Clusters: 88
+			Time: 8.28326s
+			Operations: 284696778.7
+			Inertia: 85.3
+			Iterations: 70.7
+
+		Clusters: 92
+			Time: 8.75999s
+			Operations: 304657294.7
+			Inertia: 81.3
+			Iterations: 72.3
+
+		Clusters: 96
+			Time: 6.38135s
+			Operations: 218283808.0
+			Inertia: 77.7
+			Iterations: 49.7
+
+		Clusters: 100
+			Time: 7.37611s
+			Operations: 251795500.0
+			Inertia: 74.7
+			Iterations: 55.0
+
+		Clusters: 104
+			Time: 7.21987s
+			Operations: 247583648.0
+			Inertia: 71.9
+			Iterations: 52.0
+
+		Clusters: 108
+			Time: 7.26351s
+			Operations: 250513632.0
+			Inertia: 69.2
+			Iterations: 50.7
+
+		Clusters: 112
+			Time: 9.2587s
+			Operations: 326449050.7
+			Inertia: 66.5
+			Iterations: 63.7
+
+		Clusters: 116
+			Time: 8.05739s
+			Operations: 277921190.7
+			Inertia: 64.3
+			Iterations: 52.3
+
+		Clusters: 120
+			Time: 8.32323s
+			Operations: 291167160.0
+			Inertia: 62.1
+			Iterations: 53.0
+
+		Clusters: 124
+			Time: 8.01042s
+			Operations: 270596230.7
+			Inertia: 59.9
+			Iterations: 47.7
+
+		Clusters: 128
+			Time: 12.01512s
+			Operations: 423871018.7
+			Inertia: 58.1
+			Iterations: 72.3
+
+	Kmeans (Random Init):
+		Clusters: 4
+			Time: 0.09728s
+			Operations: 2319570.7
+			Inertia: 1909.7
+			Iterations: 12.7
+
+		Clusters: 8
+			Time: 0.51271s
+			Operations: 15260333.3
+			Inertia: 985.6
+			Iterations: 41.7
+
+		Clusters: 12
+			Time: 0.49838s
+			Operations: 15199292.0
+			Inertia: 658.5
+			Iterations: 27.7
+
+		Clusters: 16
+			Time: 1.10237s
+			Operations: 36136469.3
+			Inertia: 481.4
+			Iterations: 49.3
+
+		Clusters: 20
+			Time: 1.73167s
+			Operations: 58599680.0
+			Inertia: 386.1
+			Iterations: 64.0
+
+		Clusters: 24
+			Time: 2.14577s
+			Operations: 73982096.0
+			Inertia: 318.3
+			Iterations: 67.3
+
+		Clusters: 28
+			Time: 2.332s
+			Operations: 81184973.3
+			Inertia: 274.2
+			Iterations: 63.3
+
+		Clusters: 32
+			Time: 2.53488s
+			Operations: 89364512.0
+			Inertia: 238.8
+			Iterations: 61.0
+
+		Clusters: 36
+			Time: 2.68013s
+			Operations: 93942612.0
+			Inertia: 211.7
+			Iterations: 57.0
+
+		Clusters: 40
+			Time: 4.33952s
+			Operations: 159317880.0
+			Inertia: 192.0
+			Iterations: 87.0
+
+		Clusters: 44
+			Time: 3.6036s
+			Operations: 130262205.3
+			Inertia: 173.3
+			Iterations: 64.7
+
+		Clusters: 48
+			Time: 4.32653s
+			Operations: 153824160.0
+			Inertia: 158.3
+			Iterations: 70.0
+
+		Clusters: 52
+			Time: 4.30787s
+			Operations: 157120392.0
+			Inertia: 145.8
+			Iterations: 66.0
+
+		Clusters: 56
+			Time: 5.12174s
+			Operations: 187152728.0
+			Inertia: 135.9
+			Iterations: 73.0
+
+		Clusters: 60
+			Time: 5.68808s
+			Operations: 209676980.0
+			Inertia: 127.6
+			Iterations: 76.3
+
+		Clusters: 64
+			Time: 6.03654s
+			Operations: 224632106.7
+			Inertia: 119.2
+			Iterations: 76.7
+
+		Clusters: 68
+			Time: 6.14848s
+			Operations: 226219181.3
+			Inertia: 111.6
+			Iterations: 72.7
+
+		Clusters: 72
+			Time: 7.17856s
+			Operations: 263698560.0
+			Inertia: 104.7
+			Iterations: 80.0
+
+		Clusters: 76
+			Time: 9.28802s
+			Operations: 347935600.0
+			Inertia: 99.1
+			Iterations: 100.0
+
+		Clusters: 80
+			Time: 7.78987s
+			Operations: 289335920.0
+			Inertia: 94.5
+			Iterations: 79.0
+
+		Clusters: 84
+			Time: 7.25618s
+			Operations: 275601620.0
+			Inertia: 89.4
+			Iterations: 71.7
+
+		Clusters: 88
+			Time: 9.15842s
+			Operations: 350499336.0
+			Inertia: 85.1
+			Iterations: 87.0
+
+		Clusters: 92
+			Time: 7.45207s
+			Operations: 285001985.3
+			Inertia: 81.6
+			Iterations: 67.7
+
+		Clusters: 96
+			Time: 10.46868s
+			Operations: 392617856.0
+			Inertia: 78.5
+			Iterations: 89.3
+
+		Clusters: 100
+			Time: 9.91432s
+			Operations: 372352133.3
+			Inertia: 75.2
+			Iterations: 81.3
+
+		Clusters: 104
+			Time: 11.3579s
+			Operations: 412639413.3
+			Inertia: 72.6
+			Iterations: 86.7
+
+		Clusters: 108
+			Time: 9.99228s
+			Operations: 377418564.0
+			Inertia: 69.9
+			Iterations: 76.3
+
+		Clusters: 112
+			Time: 12.29263s
+			Operations: 473436581.3
+			Inertia: 66.9
+			Iterations: 92.3
+
+		Clusters: 116
+			Time: 11.25589s
+			Operations: 437239070.7
+			Inertia: 64.6
+			Iterations: 82.3
+
+		Clusters: 120
+			Time: 12.32528s
+			Operations: 477953640.0
+			Inertia: 62.7
+			Iterations: 87.0
+
+		Clusters: 124
+			Time: 13.1518s
+			Operations: 512808241.3
+			Inertia: 60.4
+			Iterations: 90.3
+
+		Clusters: 128
+			Time: 13.0382s
+			Operations: 503957248.0
+			Inertia: 58.6
+			Iterations: 86.0
+
+	Time:
+0.2,32.2,33.3,37.1,35.6,40.5,46.4,45.4,44.4,46.6,46.9,53.2,55.2,51.9,62.3,42.1,58.1,70.5,74.9,81.5,75.4,75.6,78.5,96.5,90.0,97.5,83.1,82.6,74.3,80.0,92.9,123.5
+0.2,0.4,0.7,1.0,0.9,1.4,1.5,2.9,2.1,2.0,3.6,3.7,4.0,4.9,4.2,5.0,6.5,6.2,4.1,6.3,5.0,8.3,8.8,6.4,7.4,7.2,7.3,9.3,8.1,8.3,8.0,12.0
+0.1,0.5,0.5,1.1,1.7,2.1,2.3,2.5,2.7,4.3,3.6,4.3,4.3,5.1,5.7,6.0,6.1,7.2,9.3,7.8,7.3,9.2,7.5,10.5,9.9,11.4,10.0,12.3,11.3,12.3,13.2,13.0
+
+	Operations:
+8872.0,18010965.3,37840012.0,108810778.7,80924380.0,126191664.0,250834518.7,201594474.7,228363408.0,226898546.7,231496305.3,359487920.0,356882534.7,339464085.3,453725540.0,310794218.7,412686242.7,569315928.0,670166606.7,741131226.7,675821552.0,651329272.0,713179001.3,989497088.0,882332766.7,984517733.3,756372888.0,739093525.3,625787017.3,744181200.0,930938721.3,1376098688.0
+2014364.0,8789952.0,16847408.0,27834848.0,25332153.3,42484768.0,43583512.0,89852842.7,62628408.0,57989266.7,113475838.7,120129344.0,131727197.3,160660789.3,136427380.0,165055765.3,219992965.3,210958848.0,133375313.3,217307146.7,164079104.0,284696778.7,304657294.7,218283808.0,251795500.0,247583648.0,250513632.0,326449050.7,277921190.7,291167160.0,270596230.7,423871018.7
+2319570.7,15260333.3,15199292.0,36136469.3,58599680.0,73982096.0,81184973.3,89364512.0,93942612.0,159317880.0,130262205.3,153824160.0,157120392.0,187152728.0,209676980.0,224632106.7,226219181.3,263698560.0,347935600.0,289335920.0,275601620.0,350499336.0,285001985.3,392617856.0,372352133.3,412639413.3,377418564.0,473436581.3,437239070.7,477953640.0,512808241.3,503957248.0
+
+	Inertias:
+8767.2,6253.1,5138.1,4372.3,3934.8,3586.1,3316.7,3097.4,2918.9,2768.3,2640.1,2520.4,2419.9,2328.9,2242.6,2175.0,2113.0,2049.6,1994.4,1939.7,1897.3,1846.8,1805.6,1770.8,1734.4,1695.4,1662.9,1634.1,1607.9,1579.0,1556.0,1524.9
+1909.7,988.9,662.2,481.8,385.4,321.8,273.5,238.6,212.5,190.6,173.5,158.5,145.8,135.0,125.7,118.2,110.6,104.6,98.9,93.7,89.3,85.3,81.3,77.7,74.7,71.9,69.2,66.5,64.3,62.1,59.9,58.1
+1909.7,985.6,658.5,481.4,386.1,318.3,274.2,238.8,211.7,192.0,173.3,158.3,145.8,135.9,127.6,119.2,111.6,104.7,99.1,94.5,89.4,85.1,81.6,78.5,75.2,72.6,69.9,66.9,64.6,62.7,60.4,58.6
+
+	Iterations:
+4.0,12.0,12.0,12.0,12.0,12.3,12.0,12.3,12.0,12.3,12.3,12.0,12.3,12.0,12.0,9.7,12.0,12.3,12.0,12.3,12.0,12.3,12.0,12.0,12.0,12.0,12.3,12.3,12.3,12.0,12.0,12.0
+11.0,24.0,30.7,38.0,27.7,38.7,34.0,61.3,38.0,31.7,56.3,54.7,55.3,62.7,49.7,56.3,70.7,64.0,38.3,59.3,42.7,70.7,72.3,49.7,55.0,52.0,50.7,63.7,52.3,53.0,47.7,72.3
+12.7,41.7,27.7,49.3,64.0,67.3,63.3,61.0,57.0,87.0,64.7,70.0,66.0,73.0,76.3,76.7,72.7,80.0,100.0,79.0,71.7,87.0,67.7,89.3,81.3,86.7,76.3,92.3,82.3,87.0,90.3,86.0
+
