@@ -1,0 +1,10 @@
+- Download the Datasets from Kaggle ASHRAE Competition. Or download them from this link: https://drive.google.com/file/d/1IYuqwnR1Epx27kJ7qkccQDBHSokpm7cd/view?usp=sharing 
+- Put them into the Data folder of the project
+
+- Run the main.py, it will start to training a network with the best parameters found.  It will run into your first GPU device if you have one, or in CPU if you have no GPU.
+- During the training prints will be showed, showing: The actual mean Loss, actual pearson correlation, 3 samples, and the remaining time for the epoch to end. (For Train and after it, for Validation)
+- Kill the process when you consider, it will be saving the model each 3 epochs. 
+- It will generate a model .pth in the Models folder, and a TensorboardX summary (only can be seen from Linux (follow this tutorial for open it https://medium.com/@anthony_sarkis/tensorboard-quick-start-in-5-minutes-e3ec69f673af )) in the folder runs. If you set the name of the generated model as the 'charge' parameter of the train function (called in main) it will charge this model before starting the train process.
+- If you uncomment this line from main: #produce_test_output(model_to_charge='model_name.pth') you will generate a test csv in the Submissions folder (Warning: More than 700Mb). You can upload this csv to kaggle in order to obtain your test results (deleting the first '#' character of the csv before uploading).
+
+NOTE: In order to run this project you need to be using Python 3.7 and have the Pytorch and TensorboardX libraries installed and updated (as well as numpy).

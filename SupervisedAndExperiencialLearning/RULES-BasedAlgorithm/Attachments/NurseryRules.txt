@@ -1,0 +1,1668 @@
+RULE 0. Coverage: 0.33336. Precision: 1.0
+IF health -> not_recom THEN class --> not_recom
+RULE 1. Coverage: 0.01482. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND social -> problematic THEN class --> priority
+RULE 2. Coverage: 0.01482. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND social -> problematic THEN class --> priority
+RULE 3. Coverage: 0.01482. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND social -> problematic THEN class --> priority
+RULE 4. Coverage: 0.01482. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND social -> problematic THEN class --> priority
+RULE 5. Coverage: 0.01482. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND social -> problematic THEN class --> priority
+RULE 6. Coverage: 0.01482. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND health -> priority THEN class --> priority
+RULE 7. Coverage: 0.01482. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND health -> priority THEN class --> priority
+RULE 8. Coverage: 0.01482. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND health -> priority THEN class --> priority
+RULE 9. Coverage: 0.01482. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND health -> priority THEN class --> priority
+RULE 10. Coverage: 0.01482. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND health -> priority THEN class --> priority
+RULE 11. Coverage: 0.01111. Precision: 1.0
+IF has_nurs -> very_crit AND form -> completed AND housing -> critical THEN class --> spec_prior
+RULE 12. Coverage: 0.01111. Precision: 1.0
+IF has_nurs -> very_crit AND form -> foster AND housing -> critical THEN class --> spec_prior
+RULE 13. Coverage: 0.01111. Precision: 1.0
+IF has_nurs -> very_crit AND form -> foster AND housing -> less_conv THEN class --> spec_prior
+RULE 14. Coverage: 0.01111. Precision: 1.0
+IF has_nurs -> very_crit AND form -> incomplete AND housing -> critical THEN class --> spec_prior
+RULE 15. Coverage: 0.00556. Precision: 1.0
+IF has_nurs -> very_crit AND form -> foster AND finance -> inconv THEN class --> spec_prior
+RULE 16. Coverage: 0.00741. Precision: 1.0
+IF has_nurs -> very_crit AND form -> completed AND social -> problematic THEN class --> spec_prior
+RULE 17. Coverage: 0.00185. Precision: 1.0
+IF has_nurs -> very_crit AND form -> foster AND social -> problematic THEN class --> spec_prior
+RULE 18. Coverage: 0.00741. Precision: 1.0
+IF has_nurs -> very_crit AND form -> incomplete AND social -> problematic THEN class --> spec_prior
+RULE 19. Coverage: 0.00741. Precision: 1.0
+IF has_nurs -> very_crit AND form -> completed AND health -> priority THEN class --> spec_prior
+RULE 20. Coverage: 0.00185. Precision: 1.0
+IF has_nurs -> very_crit AND form -> foster AND health -> priority THEN class --> spec_prior
+RULE 21. Coverage: 0.00185. Precision: 1.0
+IF has_nurs -> very_crit AND form -> foster AND health -> recommended THEN class --> priority
+RULE 22. Coverage: 0.00741. Precision: 1.0
+IF has_nurs -> very_crit AND form -> incomplete AND health -> priority THEN class --> spec_prior
+RULE 23. Coverage: 0.00278. Precision: 1.0
+IF has_nurs -> very_crit AND children -> 2 AND housing -> critical THEN class --> spec_prior
+RULE 24. Coverage: 0.00278. Precision: 1.0
+IF has_nurs -> very_crit AND children -> 3 AND housing -> critical THEN class --> spec_prior
+RULE 25. Coverage: 0.00463. Precision: 1.0
+IF has_nurs -> very_crit AND children -> 3 AND housing -> less_conv THEN class --> spec_prior
+RULE 26. Coverage: 0.00278. Precision: 1.0
+IF has_nurs -> very_crit AND children -> more AND housing -> critical THEN class --> spec_prior
+RULE 27. Coverage: 0.00463. Precision: 1.0
+IF has_nurs -> very_crit AND children -> more AND housing -> less_conv THEN class --> spec_prior
+RULE 28. Coverage: 0.00231. Precision: 1.0
+IF has_nurs -> very_crit AND children -> 3 AND finance -> inconv THEN class --> spec_prior
+RULE 29. Coverage: 0.00231. Precision: 1.0
+IF has_nurs -> very_crit AND children -> more AND finance -> inconv THEN class --> spec_prior
+RULE 30. Coverage: 0.00185. Precision: 1.0
+IF has_nurs -> very_crit AND children -> 2 AND social -> problematic THEN class --> spec_prior
+RULE 31. Coverage: 0.00046. Precision: 1.0
+IF has_nurs -> very_crit AND children -> 3 AND social -> problematic THEN class --> spec_prior
+RULE 32. Coverage: 0.00046. Precision: 1.0
+IF has_nurs -> very_crit AND children -> more AND social -> problematic THEN class --> spec_prior
+RULE 33. Coverage: 0.00185. Precision: 1.0
+IF has_nurs -> very_crit AND children -> 2 AND health -> priority THEN class --> spec_prior
+RULE 34. Coverage: 0.00046. Precision: 1.0
+IF has_nurs -> very_crit AND children -> 3 AND health -> priority THEN class --> spec_prior
+RULE 35. Coverage: 0.00139. Precision: 1.0
+IF has_nurs -> very_crit AND children -> 3 AND health -> recommended THEN class --> priority
+RULE 36. Coverage: 0.00046. Precision: 1.0
+IF has_nurs -> very_crit AND children -> more AND health -> priority THEN class --> spec_prior
+RULE 37. Coverage: 0.00139. Precision: 1.0
+IF has_nurs -> very_crit AND children -> more AND health -> recommended THEN class --> priority
+RULE 38. Coverage: 0.0037. Precision: 1.0
+IF has_nurs -> very_crit AND housing -> convenient AND finance -> convenient THEN class --> priority
+RULE 39. Coverage: 0.00046. Precision: 1.0
+IF has_nurs -> very_crit AND housing -> convenient AND social -> problematic THEN class --> spec_prior
+RULE 40. Coverage: 0.00093. Precision: 1.0
+IF has_nurs -> very_crit AND housing -> critical AND social -> problematic THEN class --> spec_prior
+RULE 41. Coverage: 0.00093. Precision: 1.0
+IF has_nurs -> very_crit AND housing -> less_conv AND social -> problematic THEN class --> spec_prior
+RULE 42. Coverage: 0.00046. Precision: 1.0
+IF has_nurs -> very_crit AND housing -> convenient AND health -> priority THEN class --> spec_prior
+RULE 43. Coverage: 0.00093. Precision: 1.0
+IF has_nurs -> very_crit AND housing -> critical AND health -> priority THEN class --> spec_prior
+RULE 44. Coverage: 0.00093. Precision: 1.0
+IF has_nurs -> very_crit AND housing -> critical AND health -> recommended THEN class --> priority
+RULE 45. Coverage: 0.00093. Precision: 1.0
+IF has_nurs -> very_crit AND housing -> less_conv AND health -> priority THEN class --> spec_prior
+RULE 46. Coverage: 0.00864. Precision: 1.0
+IF form -> completed AND housing -> critical AND social -> problematic THEN class --> spec_prior
+RULE 47. Coverage: 0.00864. Precision: 1.0
+IF form -> foster AND housing -> critical AND social -> problematic THEN class --> spec_prior
+RULE 48. Coverage: 0.00864. Precision: 1.0
+IF form -> foster AND housing -> less_conv AND social -> problematic THEN class --> spec_prior
+RULE 49. Coverage: 0.00864. Precision: 1.0
+IF form -> incomplete AND housing -> critical AND social -> problematic THEN class --> spec_prior
+RULE 50. Coverage: 0.00864. Precision: 1.0
+IF form -> completed AND housing -> critical AND health -> priority THEN class --> spec_prior
+RULE 51. Coverage: 0.00864. Precision: 1.0
+IF form -> foster AND housing -> critical AND health -> priority THEN class --> spec_prior
+RULE 52. Coverage: 0.00864. Precision: 1.0
+IF form -> foster AND housing -> less_conv AND health -> priority THEN class --> spec_prior
+RULE 53. Coverage: 0.00864. Precision: 1.0
+IF form -> incomplete AND housing -> critical AND health -> priority THEN class --> spec_prior
+RULE 54. Coverage: 0.00432. Precision: 1.0
+IF form -> foster AND finance -> inconv AND social -> problematic THEN class --> spec_prior
+RULE 55. Coverage: 0.00432. Precision: 1.0
+IF form -> foster AND finance -> inconv AND health -> priority THEN class --> spec_prior
+RULE 56. Coverage: 0.00216. Precision: 1.0
+IF children -> 2 AND housing -> critical AND social -> problematic THEN class --> spec_prior
+RULE 57. Coverage: 0.00216. Precision: 1.0
+IF children -> 3 AND housing -> critical AND social -> problematic THEN class --> spec_prior
+RULE 58. Coverage: 0.00648. Precision: 1.0
+IF children -> 3 AND housing -> less_conv AND social -> problematic THEN class --> spec_prior
+RULE 59. Coverage: 0.00216. Precision: 1.0
+IF children -> more AND housing -> critical AND social -> problematic THEN class --> spec_prior
+RULE 60. Coverage: 0.00648. Precision: 1.0
+IF children -> more AND housing -> less_conv AND social -> problematic THEN class --> spec_prior
+RULE 61. Coverage: 0.00216. Precision: 1.0
+IF children -> 2 AND housing -> critical AND health -> priority THEN class --> spec_prior
+RULE 62. Coverage: 0.00216. Precision: 1.0
+IF children -> 3 AND housing -> critical AND health -> priority THEN class --> spec_prior
+RULE 63. Coverage: 0.00648. Precision: 1.0
+IF children -> 3 AND housing -> less_conv AND health -> priority THEN class --> spec_prior
+RULE 64. Coverage: 0.00216. Precision: 1.0
+IF children -> more AND housing -> critical AND health -> priority THEN class --> spec_prior
+RULE 65. Coverage: 0.00648. Precision: 1.0
+IF children -> more AND housing -> less_conv AND health -> priority THEN class --> spec_prior
+RULE 66. Coverage: 0.00324. Precision: 1.0
+IF children -> 3 AND finance -> inconv AND social -> problematic THEN class --> spec_prior
+RULE 67. Coverage: 0.00324. Precision: 1.0
+IF children -> more AND finance -> inconv AND social -> problematic THEN class --> spec_prior
+RULE 68. Coverage: 0.00324. Precision: 1.0
+IF children -> 3 AND finance -> inconv AND health -> priority THEN class --> spec_prior
+RULE 69. Coverage: 0.00324. Precision: 1.0
+IF children -> more AND finance -> inconv AND health -> priority THEN class --> spec_prior
+RULE 70. Coverage: 0.00278. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND form -> complete AND children -> 1 THEN class --> priority
+RULE 71. Coverage: 0.00216. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND form -> complete AND children -> 2 THEN class --> priority
+RULE 72. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND form -> complete AND children -> 3 THEN class --> priority
+RULE 73. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND form -> complete AND children -> more THEN class --> priority
+RULE 74. Coverage: 0.00216. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND form -> completed AND children -> 1 THEN class --> priority
+RULE 75. Coverage: 0.00216. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND form -> completed AND children -> 2 THEN class --> priority
+RULE 76. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND form -> completed AND children -> 3 THEN class --> priority
+RULE 77. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND form -> completed AND children -> more THEN class --> priority
+RULE 78. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND form -> foster AND children -> 1 THEN class --> priority
+RULE 79. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND form -> foster AND children -> 2 THEN class --> priority
+RULE 80. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND form -> foster AND children -> 3 THEN class --> priority
+RULE 81. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND form -> foster AND children -> more THEN class --> priority
+RULE 82. Coverage: 0.00216. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND form -> incomplete AND children -> 1 THEN class --> priority
+RULE 83. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND form -> incomplete AND children -> 3 THEN class --> priority
+RULE 84. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND form -> incomplete AND children -> more THEN class --> priority
+RULE 85. Coverage: 0.00278. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND form -> complete AND children -> 1 THEN class --> priority
+RULE 86. Coverage: 0.00216. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND form -> complete AND children -> 2 THEN class --> priority
+RULE 87. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND form -> complete AND children -> 3 THEN class --> priority
+RULE 88. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND form -> complete AND children -> more THEN class --> priority
+RULE 89. Coverage: 0.00216. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND form -> completed AND children -> 1 THEN class --> priority
+RULE 90. Coverage: 0.00216. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND form -> completed AND children -> 2 THEN class --> priority
+RULE 91. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND form -> completed AND children -> 3 THEN class --> priority
+RULE 92. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND form -> completed AND children -> more THEN class --> priority
+RULE 93. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND form -> foster AND children -> 1 THEN class --> priority
+RULE 94. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND form -> foster AND children -> 2 THEN class --> priority
+RULE 95. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND form -> foster AND children -> 3 THEN class --> priority
+RULE 96. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND form -> foster AND children -> more THEN class --> priority
+RULE 97. Coverage: 0.00216. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND form -> incomplete AND children -> 1 THEN class --> priority
+RULE 98. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND form -> incomplete AND children -> 3 THEN class --> priority
+RULE 99. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND form -> incomplete AND children -> more THEN class --> priority
+RULE 100. Coverage: 0.00046. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> very_crit AND form -> complete AND children -> 1 THEN class --> priority
+RULE 101. Coverage: 0.00046. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> very_crit AND form -> complete AND children -> 2 THEN class --> priority
+RULE 102. Coverage: 0.00046. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> very_crit AND form -> completed AND children -> 1 THEN class --> priority
+RULE 103. Coverage: 0.00046. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> very_crit AND form -> completed AND children -> 2 THEN class --> priority
+RULE 104. Coverage: 0.00046. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> very_crit AND form -> incomplete AND children -> 1 THEN class --> priority
+RULE 105. Coverage: 0.00046. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> very_crit AND form -> incomplete AND children -> 2 THEN class --> spec_prior
+RULE 106. Coverage: 0.00278. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND form -> complete AND children -> 1 THEN class --> priority
+RULE 107. Coverage: 0.00216. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND form -> complete AND children -> 2 THEN class --> priority
+RULE 108. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND form -> complete AND children -> 3 THEN class --> priority
+RULE 109. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND form -> complete AND children -> more THEN class --> priority
+RULE 110. Coverage: 0.00216. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND form -> completed AND children -> 1 THEN class --> priority
+RULE 111. Coverage: 0.00216. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND form -> completed AND children -> 2 THEN class --> priority
+RULE 112. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND form -> completed AND children -> 3 THEN class --> priority
+RULE 113. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND form -> completed AND children -> more THEN class --> priority
+RULE 114. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND form -> foster AND children -> 1 THEN class --> priority
+RULE 115. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND form -> foster AND children -> 2 THEN class --> priority
+RULE 116. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND form -> foster AND children -> 3 THEN class --> priority
+RULE 117. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND form -> foster AND children -> more THEN class --> priority
+RULE 118. Coverage: 0.00216. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND form -> incomplete AND children -> 1 THEN class --> priority
+RULE 119. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND form -> incomplete AND children -> 3 THEN class --> priority
+RULE 120. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND form -> incomplete AND children -> more THEN class --> priority
+RULE 121. Coverage: 0.00093. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND form -> complete AND children -> 1 THEN class --> very_recom
+RULE 122. Coverage: 0.00093. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND form -> complete AND children -> 1 THEN class --> very_recom
+RULE 123. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> very_crit AND form -> complete AND children -> 1 THEN class --> priority
+RULE 124. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> very_crit AND form -> complete AND children -> 2 THEN class --> priority
+RULE 125. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> very_crit AND form -> completed AND children -> 1 THEN class --> priority
+RULE 126. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> very_crit AND form -> completed AND children -> 2 THEN class --> priority
+RULE 127. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> very_crit AND form -> incomplete AND children -> 1 THEN class --> priority
+RULE 128. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> very_crit AND form -> incomplete AND children -> 2 THEN class --> spec_prior
+RULE 129. Coverage: 0.00278. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND form -> complete AND children -> 1 THEN class --> priority
+RULE 130. Coverage: 0.00216. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND form -> complete AND children -> 2 THEN class --> priority
+RULE 131. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND form -> complete AND children -> 3 THEN class --> priority
+RULE 132. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND form -> complete AND children -> more THEN class --> priority
+RULE 133. Coverage: 0.00216. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND form -> completed AND children -> 1 THEN class --> priority
+RULE 134. Coverage: 0.00216. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND form -> completed AND children -> 2 THEN class --> priority
+RULE 135. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND form -> completed AND children -> 3 THEN class --> priority
+RULE 136. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND form -> completed AND children -> more THEN class --> priority
+RULE 137. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND form -> foster AND children -> 1 THEN class --> priority
+RULE 138. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND form -> foster AND children -> 2 THEN class --> priority
+RULE 139. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND form -> foster AND children -> 3 THEN class --> priority
+RULE 140. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND form -> foster AND children -> more THEN class --> priority
+RULE 141. Coverage: 0.00216. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND form -> incomplete AND children -> 1 THEN class --> priority
+RULE 142. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND form -> incomplete AND children -> 3 THEN class --> priority
+RULE 143. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND form -> incomplete AND children -> more THEN class --> priority
+RULE 144. Coverage: 0.00093. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND form -> complete AND children -> 1 THEN class --> very_recom
+RULE 145. Coverage: 0.00093. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND form -> complete AND children -> 1 THEN class --> very_recom
+RULE 146. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> very_crit AND form -> complete AND children -> 1 THEN class --> priority
+RULE 147. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> very_crit AND form -> complete AND children -> 2 THEN class --> priority
+RULE 148. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> very_crit AND form -> completed AND children -> 1 THEN class --> priority
+RULE 149. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> very_crit AND form -> completed AND children -> 2 THEN class --> priority
+RULE 150. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> very_crit AND form -> incomplete AND children -> 1 THEN class --> priority
+RULE 151. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> very_crit AND form -> incomplete AND children -> 2 THEN class --> spec_prior
+RULE 152. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND form -> completed AND housing -> critical THEN class --> spec_prior
+RULE 153. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND form -> foster AND housing -> critical THEN class --> spec_prior
+RULE 154. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND form -> foster AND housing -> less_conv THEN class --> spec_prior
+RULE 155. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND form -> incomplete AND housing -> critical THEN class --> spec_prior
+RULE 156. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND form -> completed AND housing -> critical THEN class --> spec_prior
+RULE 157. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND form -> foster AND housing -> critical THEN class --> spec_prior
+RULE 158. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND form -> foster AND housing -> less_conv THEN class --> spec_prior
+RULE 159. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND form -> incomplete AND housing -> critical THEN class --> spec_prior
+RULE 160. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND form -> incomplete AND housing -> critical THEN class --> priority
+RULE 161. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND form -> incomplete AND housing -> critical THEN class --> priority
+RULE 162. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND form -> completed AND housing -> critical THEN class --> spec_prior
+RULE 163. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND form -> foster AND housing -> critical THEN class --> spec_prior
+RULE 164. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND form -> foster AND housing -> less_conv THEN class --> spec_prior
+RULE 165. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND form -> incomplete AND housing -> critical THEN class --> spec_prior
+RULE 166. Coverage: 0.00031. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND form -> incomplete AND housing -> critical THEN class --> priority
+RULE 167. Coverage: 0.00093. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND form -> complete AND housing -> critical THEN class --> priority
+RULE 168. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND form -> completed AND housing -> critical THEN class --> priority
+RULE 169. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND form -> foster AND housing -> critical THEN class --> priority
+RULE 170. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND form -> foster AND housing -> less_conv THEN class --> priority
+RULE 171. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND form -> incomplete AND housing -> critical THEN class --> priority
+RULE 172. Coverage: 0.00093. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND form -> complete AND housing -> critical THEN class --> priority
+RULE 173. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND form -> completed AND housing -> critical THEN class --> priority
+RULE 174. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND form -> foster AND housing -> critical THEN class --> priority
+RULE 175. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND form -> foster AND housing -> less_conv THEN class --> priority
+RULE 176. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND form -> incomplete AND housing -> critical THEN class --> priority
+RULE 177. Coverage: 0.00031. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND form -> incomplete AND housing -> critical THEN class --> priority
+RULE 178. Coverage: 0.00093. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND form -> complete AND housing -> critical THEN class --> priority
+RULE 179. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND form -> completed AND housing -> critical THEN class --> priority
+RULE 180. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND form -> foster AND housing -> critical THEN class --> priority
+RULE 181. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND form -> foster AND housing -> less_conv THEN class --> priority
+RULE 182. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND form -> incomplete AND housing -> critical THEN class --> priority
+RULE 183. Coverage: 0.00093. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND form -> complete AND housing -> critical THEN class --> priority
+RULE 184. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND form -> completed AND housing -> critical THEN class --> priority
+RULE 185. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND form -> foster AND housing -> critical THEN class --> priority
+RULE 186. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND form -> foster AND housing -> less_conv THEN class --> priority
+RULE 187. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND form -> incomplete AND housing -> critical THEN class --> priority
+RULE 188. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND form -> completed AND housing -> critical THEN class --> priority
+RULE 189. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND form -> foster AND housing -> critical THEN class --> priority
+RULE 190. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND form -> foster AND housing -> less_conv THEN class --> priority
+RULE 191. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND form -> incomplete AND housing -> critical THEN class --> priority
+RULE 192. Coverage: 0.00062. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND form -> foster AND finance -> inconv THEN class --> spec_prior
+RULE 193. Coverage: 0.00062. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND form -> foster AND finance -> inconv THEN class --> spec_prior
+RULE 194. Coverage: 0.00062. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND form -> foster AND finance -> inconv THEN class --> spec_prior
+RULE 195. Coverage: 0.00062. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND form -> foster AND finance -> convenient THEN class --> very_recom
+RULE 196. Coverage: 0.00062. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND form -> foster AND finance -> inconv THEN class --> priority
+RULE 197. Coverage: 0.00062. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND form -> foster AND finance -> convenient THEN class --> very_recom
+RULE 198. Coverage: 0.00062. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND form -> foster AND finance -> inconv THEN class --> priority
+RULE 199. Coverage: 0.00062. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND form -> foster AND finance -> convenient THEN class --> very_recom
+RULE 200. Coverage: 0.00062. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND form -> foster AND finance -> inconv THEN class --> priority
+RULE 201. Coverage: 0.00062. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND form -> foster AND finance -> convenient THEN class --> very_recom
+RULE 202. Coverage: 0.00062. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND form -> foster AND finance -> inconv THEN class --> priority
+RULE 203. Coverage: 0.00062. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND form -> foster AND finance -> convenient THEN class --> very_recom
+RULE 204. Coverage: 0.00062. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND form -> foster AND finance -> inconv THEN class --> priority
+RULE 205. Coverage: 0.00154. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND form -> completed AND social -> problematic THEN class --> spec_prior
+RULE 206. Coverage: 0.00062. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND form -> foster AND social -> problematic THEN class --> spec_prior
+RULE 207. Coverage: 0.00154. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND form -> incomplete AND social -> problematic THEN class --> spec_prior
+RULE 208. Coverage: 0.00154. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND form -> completed AND social -> problematic THEN class --> spec_prior
+RULE 209. Coverage: 0.00062. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND form -> foster AND social -> problematic THEN class --> spec_prior
+RULE 210. Coverage: 0.00154. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND form -> incomplete AND social -> problematic THEN class --> spec_prior
+RULE 211. Coverage: 0.00154. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND form -> completed AND social -> problematic THEN class --> spec_prior
+RULE 212. Coverage: 0.00062. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND form -> foster AND social -> problematic THEN class --> spec_prior
+RULE 213. Coverage: 0.00154. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND form -> incomplete AND social -> problematic THEN class --> spec_prior
+RULE 214. Coverage: 0.00154. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND form -> completed AND health -> priority THEN class --> spec_prior
+RULE 215. Coverage: 0.00062. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND form -> foster AND health -> priority THEN class --> spec_prior
+RULE 216. Coverage: 0.00062. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND form -> foster AND health -> recommended THEN class --> priority
+RULE 217. Coverage: 0.00154. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND form -> incomplete AND health -> priority THEN class --> spec_prior
+RULE 218. Coverage: 0.00154. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND form -> completed AND health -> priority THEN class --> spec_prior
+RULE 219. Coverage: 0.00062. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND form -> foster AND health -> priority THEN class --> spec_prior
+RULE 220. Coverage: 0.00062. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND form -> foster AND health -> recommended THEN class --> priority
+RULE 221. Coverage: 0.00154. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND form -> incomplete AND health -> priority THEN class --> spec_prior
+RULE 222. Coverage: 0.00154. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND form -> completed AND health -> priority THEN class --> spec_prior
+RULE 223. Coverage: 0.00062. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND form -> foster AND health -> priority THEN class --> spec_prior
+RULE 224. Coverage: 0.00062. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND form -> foster AND health -> recommended THEN class --> priority
+RULE 225. Coverage: 0.00154. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND form -> incomplete AND health -> priority THEN class --> spec_prior
+RULE 226. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND children -> 2 AND housing -> critical THEN class --> spec_prior
+RULE 227. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND children -> 3 AND housing -> critical THEN class --> spec_prior
+RULE 228. Coverage: 0.00093. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND children -> 3 AND housing -> less_conv THEN class --> spec_prior
+RULE 229. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND children -> more AND housing -> critical THEN class --> spec_prior
+RULE 230. Coverage: 0.00093. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND children -> more AND housing -> less_conv THEN class --> spec_prior
+RULE 231. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND children -> 2 AND housing -> critical THEN class --> spec_prior
+RULE 232. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND children -> 3 AND housing -> critical THEN class --> spec_prior
+RULE 233. Coverage: 0.00093. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND children -> 3 AND housing -> less_conv THEN class --> spec_prior
+RULE 234. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND children -> more AND housing -> critical THEN class --> spec_prior
+RULE 235. Coverage: 0.00093. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND children -> more AND housing -> less_conv THEN class --> spec_prior
+RULE 236. Coverage: 0.00031. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND children -> 2 AND housing -> critical THEN class --> spec_prior
+RULE 237. Coverage: 0.00031. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND children -> 3 AND housing -> critical THEN class --> spec_prior
+RULE 238. Coverage: 0.00093. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND children -> 3 AND housing -> less_conv THEN class --> spec_prior
+RULE 239. Coverage: 0.00031. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND children -> more AND housing -> critical THEN class --> spec_prior
+RULE 240. Coverage: 0.00093. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND children -> more AND housing -> less_conv THEN class --> spec_prior
+RULE 241. Coverage: 0.00062. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND children -> 1 AND housing -> convenient THEN class --> very_recom
+RULE 242. Coverage: 0.00062. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND children -> 1 AND housing -> less_conv THEN class --> very_recom
+RULE 243. Coverage: 0.00093. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND children -> 3 AND housing -> less_conv THEN class --> priority
+RULE 244. Coverage: 0.00093. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND children -> more AND housing -> less_conv THEN class --> priority
+RULE 245. Coverage: 0.00062. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND children -> 1 AND housing -> convenient THEN class --> very_recom
+RULE 246. Coverage: 0.00062. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND children -> 1 AND housing -> less_conv THEN class --> very_recom
+RULE 247. Coverage: 0.00093. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND children -> 3 AND housing -> less_conv THEN class --> priority
+RULE 248. Coverage: 0.00093. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND children -> more AND housing -> less_conv THEN class --> priority
+RULE 249. Coverage: 0.00062. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND children -> 1 AND housing -> convenient THEN class --> very_recom
+RULE 250. Coverage: 0.00062. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND children -> 1 AND housing -> less_conv THEN class --> very_recom
+RULE 251. Coverage: 0.00093. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND children -> 3 AND housing -> less_conv THEN class --> priority
+RULE 252. Coverage: 0.00093. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND children -> more AND housing -> less_conv THEN class --> priority
+RULE 253. Coverage: 0.00062. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND children -> 1 AND housing -> convenient THEN class --> very_recom
+RULE 254. Coverage: 0.00062. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND children -> 1 AND housing -> less_conv THEN class --> very_recom
+RULE 255. Coverage: 0.00093. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND children -> 3 AND housing -> less_conv THEN class --> priority
+RULE 256. Coverage: 0.00093. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND children -> more AND housing -> less_conv THEN class --> priority
+RULE 257. Coverage: 0.00031. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND children -> 1 AND housing -> critical THEN class --> very_recom
+RULE 258. Coverage: 0.00093. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND children -> 1 AND housing -> less_conv THEN class --> very_recom
+RULE 259. Coverage: 0.00031. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND children -> 2 AND housing -> critical THEN class --> priority
+RULE 260. Coverage: 0.00031. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND children -> 3 AND housing -> critical THEN class --> priority
+RULE 261. Coverage: 0.00093. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND children -> 3 AND housing -> less_conv THEN class --> priority
+RULE 262. Coverage: 0.00031. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND children -> more AND housing -> critical THEN class --> priority
+RULE 263. Coverage: 0.00093. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND children -> more AND housing -> less_conv THEN class --> priority
+RULE 264. Coverage: 0.00046. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND children -> 3 AND finance -> inconv THEN class --> spec_prior
+RULE 265. Coverage: 0.00046. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND children -> more AND finance -> inconv THEN class --> spec_prior
+RULE 266. Coverage: 0.00046. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND children -> 3 AND finance -> inconv THEN class --> spec_prior
+RULE 267. Coverage: 0.00046. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND children -> more AND finance -> inconv THEN class --> spec_prior
+RULE 268. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND children -> 3 AND finance -> inconv THEN class --> spec_prior
+RULE 269. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND children -> more AND finance -> inconv THEN class --> spec_prior
+RULE 270. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND children -> 3 AND finance -> convenient THEN class --> very_recom
+RULE 271. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND children -> 3 AND finance -> inconv THEN class --> priority
+RULE 272. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND children -> more AND finance -> convenient THEN class --> very_recom
+RULE 273. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND children -> more AND finance -> inconv THEN class --> priority
+RULE 274. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND children -> 3 AND finance -> convenient THEN class --> very_recom
+RULE 275. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND children -> 3 AND finance -> inconv THEN class --> priority
+RULE 276. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND children -> more AND finance -> convenient THEN class --> very_recom
+RULE 277. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND children -> more AND finance -> inconv THEN class --> priority
+RULE 278. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND children -> 3 AND finance -> convenient THEN class --> very_recom
+RULE 279. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND children -> 3 AND finance -> inconv THEN class --> priority
+RULE 280. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND children -> more AND finance -> convenient THEN class --> very_recom
+RULE 281. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND children -> more AND finance -> inconv THEN class --> priority
+RULE 282. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND children -> 3 AND finance -> convenient THEN class --> very_recom
+RULE 283. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND children -> 3 AND finance -> inconv THEN class --> priority
+RULE 284. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND children -> more AND finance -> convenient THEN class --> very_recom
+RULE 285. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND children -> more AND finance -> inconv THEN class --> priority
+RULE 286. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND children -> 1 AND finance -> inconv THEN class --> very_recom
+RULE 287. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND children -> 3 AND finance -> convenient THEN class --> very_recom
+RULE 288. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND children -> 3 AND finance -> inconv THEN class --> priority
+RULE 289. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND children -> more AND finance -> convenient THEN class --> very_recom
+RULE 290. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND children -> more AND finance -> inconv THEN class --> priority
+RULE 291. Coverage: 0.00062. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND children -> 2 AND social -> problematic THEN class --> spec_prior
+RULE 292. Coverage: 0.00015. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND children -> 3 AND social -> problematic THEN class --> spec_prior
+RULE 293. Coverage: 0.00015. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND children -> more AND social -> problematic THEN class --> spec_prior
+RULE 294. Coverage: 0.00062. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND children -> 2 AND social -> problematic THEN class --> spec_prior
+RULE 295. Coverage: 0.00015. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND children -> 3 AND social -> problematic THEN class --> spec_prior
+RULE 296. Coverage: 0.00015. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND children -> more AND social -> problematic THEN class --> spec_prior
+RULE 297. Coverage: 0.00062. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND children -> 2 AND social -> problematic THEN class --> spec_prior
+RULE 298. Coverage: 0.00015. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND children -> 3 AND social -> problematic THEN class --> spec_prior
+RULE 299. Coverage: 0.00015. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND children -> more AND social -> problematic THEN class --> spec_prior
+RULE 300. Coverage: 0.00062. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND children -> 2 AND health -> priority THEN class --> spec_prior
+RULE 301. Coverage: 0.00015. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND children -> 3 AND health -> priority THEN class --> spec_prior
+RULE 302. Coverage: 0.00046. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND children -> 3 AND health -> recommended THEN class --> priority
+RULE 303. Coverage: 0.00015. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND children -> more AND health -> priority THEN class --> spec_prior
+RULE 304. Coverage: 0.00046. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND children -> more AND health -> recommended THEN class --> priority
+RULE 305. Coverage: 0.00062. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND children -> 2 AND health -> priority THEN class --> spec_prior
+RULE 306. Coverage: 0.00015. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND children -> 3 AND health -> priority THEN class --> spec_prior
+RULE 307. Coverage: 0.00046. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND children -> 3 AND health -> recommended THEN class --> priority
+RULE 308. Coverage: 0.00015. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND children -> more AND health -> priority THEN class --> spec_prior
+RULE 309. Coverage: 0.00046. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND children -> more AND health -> recommended THEN class --> priority
+RULE 310. Coverage: 0.00062. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND children -> 2 AND health -> priority THEN class --> spec_prior
+RULE 311. Coverage: 0.00015. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND children -> 3 AND health -> priority THEN class --> spec_prior
+RULE 312. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND children -> 3 AND health -> recommended THEN class --> priority
+RULE 313. Coverage: 0.00015. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND children -> more AND health -> priority THEN class --> spec_prior
+RULE 314. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND children -> more AND health -> recommended THEN class --> priority
+RULE 315. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND housing -> convenient AND finance -> convenient THEN class --> priority
+RULE 316. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND housing -> convenient AND finance -> convenient THEN class --> priority
+RULE 317. Coverage: 0.00046. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND housing -> convenient AND finance -> convenient THEN class --> priority
+RULE 318. Coverage: 0.00046. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND housing -> convenient AND finance -> convenient THEN class --> priority
+RULE 319. Coverage: 0.00116. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND housing -> convenient AND finance -> convenient THEN class --> priority
+RULE 320. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND housing -> convenient AND finance -> convenient THEN class --> priority
+RULE 321. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND housing -> convenient AND finance -> convenient THEN class --> very_recom
+RULE 322. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND housing -> convenient AND finance -> convenient THEN class --> very_recom
+RULE 323. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND housing -> convenient AND finance -> convenient THEN class --> priority
+RULE 324. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND housing -> convenient AND finance -> convenient THEN class --> very_recom
+RULE 325. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND housing -> convenient AND finance -> convenient THEN class --> very_recom
+RULE 326. Coverage: 0.00015. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND housing -> convenient AND social -> problematic THEN class --> spec_prior
+RULE 327. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND housing -> critical AND social -> problematic THEN class --> spec_prior
+RULE 328. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND housing -> less_conv AND social -> problematic THEN class --> spec_prior
+RULE 329. Coverage: 0.00015. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND housing -> convenient AND social -> problematic THEN class --> spec_prior
+RULE 330. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND housing -> critical AND social -> problematic THEN class --> spec_prior
+RULE 331. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND housing -> less_conv AND social -> problematic THEN class --> spec_prior
+RULE 332. Coverage: 0.00015. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND housing -> convenient AND social -> problematic THEN class --> spec_prior
+RULE 333. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND housing -> less_conv AND social -> problematic THEN class --> spec_prior
+RULE 334. Coverage: 0.00015. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND housing -> convenient AND social -> problematic THEN class --> spec_prior
+RULE 335. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND housing -> less_conv AND social -> problematic THEN class --> spec_prior
+RULE 336. Coverage: 0.00015. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND housing -> convenient AND social -> problematic THEN class --> spec_prior
+RULE 337. Coverage: 0.00031. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND housing -> critical AND social -> problematic THEN class --> spec_prior
+RULE 338. Coverage: 0.00031. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND housing -> less_conv AND social -> problematic THEN class --> spec_prior
+RULE 339. Coverage: 0.00015. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND housing -> convenient AND social -> problematic THEN class --> spec_prior
+RULE 340. Coverage: 0.00031. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND housing -> less_conv AND social -> problematic THEN class --> spec_prior
+RULE 341. Coverage: 0.00015. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND housing -> convenient AND social -> problematic THEN class --> spec_prior
+RULE 342. Coverage: 0.00031. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND housing -> less_conv AND social -> problematic THEN class --> spec_prior
+RULE 343. Coverage: 0.00015. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND housing -> convenient AND health -> priority THEN class --> spec_prior
+RULE 344. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND housing -> critical AND health -> priority THEN class --> spec_prior
+RULE 345. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND housing -> critical AND health -> recommended THEN class --> priority
+RULE 346. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND housing -> less_conv AND health -> priority THEN class --> spec_prior
+RULE 347. Coverage: 0.00015. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND housing -> convenient AND health -> priority THEN class --> spec_prior
+RULE 348. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND housing -> critical AND health -> priority THEN class --> spec_prior
+RULE 349. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND housing -> critical AND health -> recommended THEN class --> priority
+RULE 350. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND housing -> less_conv AND health -> priority THEN class --> spec_prior
+RULE 351. Coverage: 0.00015. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND housing -> convenient AND health -> priority THEN class --> spec_prior
+RULE 352. Coverage: 0.00015. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND housing -> convenient AND health -> recommended THEN class --> priority
+RULE 353. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND housing -> less_conv AND health -> priority THEN class --> spec_prior
+RULE 354. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND housing -> less_conv AND health -> recommended THEN class --> priority
+RULE 355. Coverage: 0.00015. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND housing -> convenient AND health -> priority THEN class --> spec_prior
+RULE 356. Coverage: 0.00015. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND housing -> convenient AND health -> recommended THEN class --> priority
+RULE 357. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND housing -> less_conv AND health -> priority THEN class --> spec_prior
+RULE 358. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND housing -> less_conv AND health -> recommended THEN class --> priority
+RULE 359. Coverage: 0.00015. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND housing -> convenient AND health -> priority THEN class --> spec_prior
+RULE 360. Coverage: 0.00031. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND housing -> critical AND health -> priority THEN class --> spec_prior
+RULE 361. Coverage: 0.00031. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND housing -> critical AND health -> recommended THEN class --> priority
+RULE 362. Coverage: 0.00031. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND housing -> less_conv AND health -> priority THEN class --> spec_prior
+RULE 363. Coverage: 0.00015. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND housing -> convenient AND health -> priority THEN class --> spec_prior
+RULE 364. Coverage: 0.00015. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND housing -> convenient AND health -> recommended THEN class --> priority
+RULE 365. Coverage: 0.00031. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND housing -> less_conv AND health -> priority THEN class --> spec_prior
+RULE 366. Coverage: 0.00031. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND housing -> less_conv AND health -> recommended THEN class --> priority
+RULE 367. Coverage: 0.00015. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND housing -> convenient AND health -> priority THEN class --> spec_prior
+RULE 368. Coverage: 0.00015. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND housing -> convenient AND health -> recommended THEN class --> priority
+RULE 369. Coverage: 0.00031. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND housing -> less_conv AND health -> priority THEN class --> spec_prior
+RULE 370. Coverage: 0.00031. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND housing -> less_conv AND health -> recommended THEN class --> priority
+RULE 371. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND form -> complete AND children -> 1 AND housing -> convenient THEN class --> priority
+RULE 372. Coverage: 0.00062. Precision: 1.0
+IF parents -> great_pret AND form -> complete AND children -> 1 AND housing -> less_conv THEN class --> priority
+RULE 373. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND form -> complete AND children -> 2 AND housing -> convenient THEN class --> priority
+RULE 374. Coverage: 0.00062. Precision: 1.0
+IF parents -> great_pret AND form -> complete AND children -> 2 AND housing -> less_conv THEN class --> priority
+RULE 375. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND form -> completed AND children -> 1 AND housing -> convenient THEN class --> priority
+RULE 376. Coverage: 0.00062. Precision: 1.0
+IF parents -> great_pret AND form -> completed AND children -> 1 AND housing -> less_conv THEN class --> priority
+RULE 377. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND form -> completed AND children -> 2 AND housing -> convenient THEN class --> priority
+RULE 378. Coverage: 0.00062. Precision: 1.0
+IF parents -> great_pret AND form -> completed AND children -> 2 AND housing -> less_conv THEN class --> priority
+RULE 379. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND form -> incomplete AND children -> 1 AND housing -> convenient THEN class --> priority
+RULE 380. Coverage: 0.00062. Precision: 1.0
+IF parents -> great_pret AND form -> incomplete AND children -> 1 AND housing -> less_conv THEN class --> priority
+RULE 381. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND form -> incomplete AND children -> 2 AND housing -> convenient THEN class --> spec_prior
+RULE 382. Coverage: 0.00062. Precision: 1.0
+IF parents -> great_pret AND form -> incomplete AND children -> 2 AND housing -> less_conv THEN class --> spec_prior
+RULE 383. Coverage: 0.00015. Precision: 1.0
+IF parents -> pretentious AND form -> complete AND children -> 1 AND housing -> convenient THEN class --> priority
+RULE 384. Coverage: 0.00031. Precision: 1.0
+IF parents -> pretentious AND form -> complete AND children -> 1 AND housing -> less_conv THEN class --> priority
+RULE 385. Coverage: 0.00015. Precision: 1.0
+IF parents -> pretentious AND form -> completed AND children -> 1 AND housing -> convenient THEN class --> priority
+RULE 386. Coverage: 0.00031. Precision: 1.0
+IF parents -> pretentious AND form -> completed AND children -> 1 AND housing -> less_conv THEN class --> priority
+RULE 387. Coverage: 0.00015. Precision: 1.0
+IF parents -> pretentious AND form -> incomplete AND children -> 1 AND housing -> convenient THEN class --> priority
+RULE 388. Coverage: 0.00031. Precision: 1.0
+IF parents -> pretentious AND form -> incomplete AND children -> 1 AND housing -> less_conv THEN class --> priority
+RULE 389. Coverage: 0.00015. Precision: 1.0
+IF parents -> usual AND form -> complete AND children -> 1 AND housing -> convenient THEN class --> recommend
+RULE 390. Coverage: 0.00062. Precision: 1.0
+IF parents -> usual AND form -> complete AND children -> 2 AND housing -> convenient THEN class --> very_recom
+RULE 391. Coverage: 0.00093. Precision: 1.0
+IF parents -> usual AND form -> complete AND children -> 2 AND housing -> less_conv THEN class --> very_recom
+RULE 392. Coverage: 0.00015. Precision: 1.0
+IF parents -> usual AND form -> completed AND children -> 1 AND housing -> convenient THEN class --> very_recom
+RULE 393. Coverage: 0.00062. Precision: 1.0
+IF parents -> usual AND form -> completed AND children -> 2 AND housing -> convenient THEN class --> very_recom
+RULE 394. Coverage: 0.00093. Precision: 1.0
+IF parents -> usual AND form -> completed AND children -> 2 AND housing -> less_conv THEN class --> very_recom
+RULE 395. Coverage: 0.00015. Precision: 1.0
+IF parents -> usual AND form -> incomplete AND children -> 1 AND housing -> convenient THEN class --> very_recom
+RULE 396. Coverage: 0.00093. Precision: 1.0
+IF parents -> usual AND form -> incomplete AND children -> 2 AND housing -> less_conv THEN class --> priority
+RULE 397. Coverage: 0.00015. Precision: 1.0
+IF parents -> usual AND form -> incomplete AND children -> 2 AND finance -> convenient THEN class --> very_recom
+RULE 398. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND form -> incomplete AND children -> 2 AND finance -> inconv THEN class --> priority
+RULE 399. Coverage: 0.00015. Precision: 1.0
+IF has_nurs -> critical AND form -> complete AND children -> 2 AND housing -> convenient THEN class --> priority
+RULE 400. Coverage: 0.00031. Precision: 1.0
+IF has_nurs -> critical AND form -> complete AND children -> 2 AND housing -> less_conv THEN class --> priority
+RULE 401. Coverage: 0.00015. Precision: 1.0
+IF has_nurs -> critical AND form -> completed AND children -> 2 AND housing -> convenient THEN class --> priority
+RULE 402. Coverage: 0.00031. Precision: 1.0
+IF has_nurs -> critical AND form -> completed AND children -> 2 AND housing -> less_conv THEN class --> priority
+RULE 403. Coverage: 0.00015. Precision: 1.0
+IF has_nurs -> critical AND form -> incomplete AND children -> 2 AND housing -> convenient THEN class --> spec_prior
+RULE 404. Coverage: 0.00031. Precision: 1.0
+IF has_nurs -> critical AND form -> incomplete AND children -> 2 AND housing -> less_conv THEN class --> spec_prior
+RULE 405. Coverage: 0.00015. Precision: 1.0
+IF has_nurs -> less_proper AND form -> complete AND children -> 2 AND housing -> convenient THEN class --> very_recom
+RULE 406. Coverage: 0.00031. Precision: 1.0
+IF has_nurs -> less_proper AND form -> complete AND children -> 2 AND housing -> less_conv THEN class --> very_recom
+RULE 407. Coverage: 0.00015. Precision: 1.0
+IF has_nurs -> less_proper AND form -> completed AND children -> 2 AND housing -> convenient THEN class --> very_recom
+RULE 408. Coverage: 0.00031. Precision: 1.0
+IF has_nurs -> less_proper AND form -> completed AND children -> 2 AND housing -> less_conv THEN class --> very_recom
+RULE 409. Coverage: 0.00015. Precision: 1.0
+IF has_nurs -> less_proper AND form -> incomplete AND children -> 2 AND housing -> convenient THEN class --> priority
+RULE 410. Coverage: 0.00031. Precision: 1.0
+IF has_nurs -> less_proper AND form -> incomplete AND children -> 2 AND housing -> less_conv THEN class --> priority
+RULE 411. Coverage: 0.00015. Precision: 1.0
+IF has_nurs -> proper AND form -> complete AND children -> 2 AND housing -> convenient THEN class --> very_recom
+RULE 412. Coverage: 0.00031. Precision: 1.0
+IF has_nurs -> proper AND form -> complete AND children -> 2 AND housing -> less_conv THEN class --> very_recom
+RULE 413. Coverage: 0.00015. Precision: 1.0
+IF has_nurs -> proper AND form -> completed AND children -> 2 AND housing -> convenient THEN class --> very_recom
+RULE 414. Coverage: 0.00031. Precision: 1.0
+IF has_nurs -> proper AND form -> completed AND children -> 2 AND housing -> less_conv THEN class --> very_recom
+RULE 415. Coverage: 0.00015. Precision: 1.0
+IF has_nurs -> proper AND form -> incomplete AND children -> 2 AND housing -> convenient THEN class --> priority
+RULE 416. Coverage: 0.00031. Precision: 1.0
+IF has_nurs -> proper AND form -> incomplete AND children -> 2 AND housing -> less_conv THEN class --> priority
+RULE 0. Coverage: 0.33336. Precision: 1.0
+IF health -> not_recom THEN class --> not_recom
+RULE 1. Coverage: 0.01482. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND social -> problematic THEN class --> priority
+RULE 2. Coverage: 0.01482. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND social -> problematic THEN class --> priority
+RULE 3. Coverage: 0.01482. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND social -> problematic THEN class --> priority
+RULE 4. Coverage: 0.01482. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND social -> problematic THEN class --> priority
+RULE 5. Coverage: 0.01482. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND social -> problematic THEN class --> priority
+RULE 6. Coverage: 0.01482. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND health -> priority THEN class --> priority
+RULE 7. Coverage: 0.01482. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND health -> priority THEN class --> priority
+RULE 8. Coverage: 0.01482. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND health -> priority THEN class --> priority
+RULE 9. Coverage: 0.01482. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND health -> priority THEN class --> priority
+RULE 10. Coverage: 0.01482. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND health -> priority THEN class --> priority
+RULE 11. Coverage: 0.01111. Precision: 1.0
+IF has_nurs -> very_crit AND form -> completed AND housing -> critical THEN class --> spec_prior
+RULE 12. Coverage: 0.01111. Precision: 1.0
+IF has_nurs -> very_crit AND form -> foster AND housing -> critical THEN class --> spec_prior
+RULE 13. Coverage: 0.01111. Precision: 1.0
+IF has_nurs -> very_crit AND form -> foster AND housing -> less_conv THEN class --> spec_prior
+RULE 14. Coverage: 0.01111. Precision: 1.0
+IF has_nurs -> very_crit AND form -> incomplete AND housing -> critical THEN class --> spec_prior
+RULE 15. Coverage: 0.00556. Precision: 1.0
+IF has_nurs -> very_crit AND form -> foster AND finance -> inconv THEN class --> spec_prior
+RULE 16. Coverage: 0.00741. Precision: 1.0
+IF has_nurs -> very_crit AND form -> completed AND social -> problematic THEN class --> spec_prior
+RULE 17. Coverage: 0.00185. Precision: 1.0
+IF has_nurs -> very_crit AND form -> foster AND social -> problematic THEN class --> spec_prior
+RULE 18. Coverage: 0.00741. Precision: 1.0
+IF has_nurs -> very_crit AND form -> incomplete AND social -> problematic THEN class --> spec_prior
+RULE 19. Coverage: 0.00741. Precision: 1.0
+IF has_nurs -> very_crit AND form -> completed AND health -> priority THEN class --> spec_prior
+RULE 20. Coverage: 0.00185. Precision: 1.0
+IF has_nurs -> very_crit AND form -> foster AND health -> priority THEN class --> spec_prior
+RULE 21. Coverage: 0.00185. Precision: 1.0
+IF has_nurs -> very_crit AND form -> foster AND health -> recommended THEN class --> priority
+RULE 22. Coverage: 0.00741. Precision: 1.0
+IF has_nurs -> very_crit AND form -> incomplete AND health -> priority THEN class --> spec_prior
+RULE 23. Coverage: 0.00278. Precision: 1.0
+IF has_nurs -> very_crit AND children -> 2 AND housing -> critical THEN class --> spec_prior
+RULE 24. Coverage: 0.00278. Precision: 1.0
+IF has_nurs -> very_crit AND children -> 3 AND housing -> critical THEN class --> spec_prior
+RULE 25. Coverage: 0.00463. Precision: 1.0
+IF has_nurs -> very_crit AND children -> 3 AND housing -> less_conv THEN class --> spec_prior
+RULE 26. Coverage: 0.00278. Precision: 1.0
+IF has_nurs -> very_crit AND children -> more AND housing -> critical THEN class --> spec_prior
+RULE 27. Coverage: 0.00463. Precision: 1.0
+IF has_nurs -> very_crit AND children -> more AND housing -> less_conv THEN class --> spec_prior
+RULE 28. Coverage: 0.00231. Precision: 1.0
+IF has_nurs -> very_crit AND children -> 3 AND finance -> inconv THEN class --> spec_prior
+RULE 29. Coverage: 0.00231. Precision: 1.0
+IF has_nurs -> very_crit AND children -> more AND finance -> inconv THEN class --> spec_prior
+RULE 30. Coverage: 0.00185. Precision: 1.0
+IF has_nurs -> very_crit AND children -> 2 AND social -> problematic THEN class --> spec_prior
+RULE 31. Coverage: 0.00046. Precision: 1.0
+IF has_nurs -> very_crit AND children -> 3 AND social -> problematic THEN class --> spec_prior
+RULE 32. Coverage: 0.00046. Precision: 1.0
+IF has_nurs -> very_crit AND children -> more AND social -> problematic THEN class --> spec_prior
+RULE 33. Coverage: 0.00185. Precision: 1.0
+IF has_nurs -> very_crit AND children -> 2 AND health -> priority THEN class --> spec_prior
+RULE 34. Coverage: 0.00046. Precision: 1.0
+IF has_nurs -> very_crit AND children -> 3 AND health -> priority THEN class --> spec_prior
+RULE 35. Coverage: 0.00139. Precision: 1.0
+IF has_nurs -> very_crit AND children -> 3 AND health -> recommended THEN class --> priority
+RULE 36. Coverage: 0.00046. Precision: 1.0
+IF has_nurs -> very_crit AND children -> more AND health -> priority THEN class --> spec_prior
+RULE 37. Coverage: 0.00139. Precision: 1.0
+IF has_nurs -> very_crit AND children -> more AND health -> recommended THEN class --> priority
+RULE 38. Coverage: 0.0037. Precision: 1.0
+IF has_nurs -> very_crit AND housing -> convenient AND finance -> convenient THEN class --> priority
+RULE 39. Coverage: 0.00046. Precision: 1.0
+IF has_nurs -> very_crit AND housing -> convenient AND social -> problematic THEN class --> spec_prior
+RULE 40. Coverage: 0.00093. Precision: 1.0
+IF has_nurs -> very_crit AND housing -> critical AND social -> problematic THEN class --> spec_prior
+RULE 41. Coverage: 0.00093. Precision: 1.0
+IF has_nurs -> very_crit AND housing -> less_conv AND social -> problematic THEN class --> spec_prior
+RULE 42. Coverage: 0.00046. Precision: 1.0
+IF has_nurs -> very_crit AND housing -> convenient AND health -> priority THEN class --> spec_prior
+RULE 43. Coverage: 0.00093. Precision: 1.0
+IF has_nurs -> very_crit AND housing -> critical AND health -> priority THEN class --> spec_prior
+RULE 44. Coverage: 0.00093. Precision: 1.0
+IF has_nurs -> very_crit AND housing -> critical AND health -> recommended THEN class --> priority
+RULE 45. Coverage: 0.00093. Precision: 1.0
+IF has_nurs -> very_crit AND housing -> less_conv AND health -> priority THEN class --> spec_prior
+RULE 46. Coverage: 0.00864. Precision: 1.0
+IF form -> completed AND housing -> critical AND social -> problematic THEN class --> spec_prior
+RULE 47. Coverage: 0.00864. Precision: 1.0
+IF form -> foster AND housing -> critical AND social -> problematic THEN class --> spec_prior
+RULE 48. Coverage: 0.00864. Precision: 1.0
+IF form -> foster AND housing -> less_conv AND social -> problematic THEN class --> spec_prior
+RULE 49. Coverage: 0.00864. Precision: 1.0
+IF form -> incomplete AND housing -> critical AND social -> problematic THEN class --> spec_prior
+RULE 50. Coverage: 0.00864. Precision: 1.0
+IF form -> completed AND housing -> critical AND health -> priority THEN class --> spec_prior
+RULE 51. Coverage: 0.00864. Precision: 1.0
+IF form -> foster AND housing -> critical AND health -> priority THEN class --> spec_prior
+RULE 52. Coverage: 0.00864. Precision: 1.0
+IF form -> foster AND housing -> less_conv AND health -> priority THEN class --> spec_prior
+RULE 53. Coverage: 0.00864. Precision: 1.0
+IF form -> incomplete AND housing -> critical AND health -> priority THEN class --> spec_prior
+RULE 54. Coverage: 0.00432. Precision: 1.0
+IF form -> foster AND finance -> inconv AND social -> problematic THEN class --> spec_prior
+RULE 55. Coverage: 0.00432. Precision: 1.0
+IF form -> foster AND finance -> inconv AND health -> priority THEN class --> spec_prior
+RULE 56. Coverage: 0.00216. Precision: 1.0
+IF children -> 2 AND housing -> critical AND social -> problematic THEN class --> spec_prior
+RULE 57. Coverage: 0.00216. Precision: 1.0
+IF children -> 3 AND housing -> critical AND social -> problematic THEN class --> spec_prior
+RULE 58. Coverage: 0.00648. Precision: 1.0
+IF children -> 3 AND housing -> less_conv AND social -> problematic THEN class --> spec_prior
+RULE 59. Coverage: 0.00216. Precision: 1.0
+IF children -> more AND housing -> critical AND social -> problematic THEN class --> spec_prior
+RULE 60. Coverage: 0.00648. Precision: 1.0
+IF children -> more AND housing -> less_conv AND social -> problematic THEN class --> spec_prior
+RULE 61. Coverage: 0.00216. Precision: 1.0
+IF children -> 2 AND housing -> critical AND health -> priority THEN class --> spec_prior
+RULE 62. Coverage: 0.00216. Precision: 1.0
+IF children -> 3 AND housing -> critical AND health -> priority THEN class --> spec_prior
+RULE 63. Coverage: 0.00648. Precision: 1.0
+IF children -> 3 AND housing -> less_conv AND health -> priority THEN class --> spec_prior
+RULE 64. Coverage: 0.00216. Precision: 1.0
+IF children -> more AND housing -> critical AND health -> priority THEN class --> spec_prior
+RULE 65. Coverage: 0.00648. Precision: 1.0
+IF children -> more AND housing -> less_conv AND health -> priority THEN class --> spec_prior
+RULE 66. Coverage: 0.00324. Precision: 1.0
+IF children -> 3 AND finance -> inconv AND social -> problematic THEN class --> spec_prior
+RULE 67. Coverage: 0.00324. Precision: 1.0
+IF children -> more AND finance -> inconv AND social -> problematic THEN class --> spec_prior
+RULE 68. Coverage: 0.00324. Precision: 1.0
+IF children -> 3 AND finance -> inconv AND health -> priority THEN class --> spec_prior
+RULE 69. Coverage: 0.00324. Precision: 1.0
+IF children -> more AND finance -> inconv AND health -> priority THEN class --> spec_prior
+RULE 70. Coverage: 0.00278. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND form -> complete AND children -> 1 THEN class --> priority
+RULE 71. Coverage: 0.00216. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND form -> complete AND children -> 2 THEN class --> priority
+RULE 72. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND form -> complete AND children -> 3 THEN class --> priority
+RULE 73. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND form -> complete AND children -> more THEN class --> priority
+RULE 74. Coverage: 0.00216. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND form -> completed AND children -> 1 THEN class --> priority
+RULE 75. Coverage: 0.00216. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND form -> completed AND children -> 2 THEN class --> priority
+RULE 76. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND form -> completed AND children -> 3 THEN class --> priority
+RULE 77. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND form -> completed AND children -> more THEN class --> priority
+RULE 78. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND form -> foster AND children -> 1 THEN class --> priority
+RULE 79. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND form -> foster AND children -> 2 THEN class --> priority
+RULE 80. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND form -> foster AND children -> 3 THEN class --> priority
+RULE 81. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND form -> foster AND children -> more THEN class --> priority
+RULE 82. Coverage: 0.00216. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND form -> incomplete AND children -> 1 THEN class --> priority
+RULE 83. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND form -> incomplete AND children -> 3 THEN class --> priority
+RULE 84. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND form -> incomplete AND children -> more THEN class --> priority
+RULE 85. Coverage: 0.00278. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND form -> complete AND children -> 1 THEN class --> priority
+RULE 86. Coverage: 0.00216. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND form -> complete AND children -> 2 THEN class --> priority
+RULE 87. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND form -> complete AND children -> 3 THEN class --> priority
+RULE 88. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND form -> complete AND children -> more THEN class --> priority
+RULE 89. Coverage: 0.00216. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND form -> completed AND children -> 1 THEN class --> priority
+RULE 90. Coverage: 0.00216. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND form -> completed AND children -> 2 THEN class --> priority
+RULE 91. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND form -> completed AND children -> 3 THEN class --> priority
+RULE 92. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND form -> completed AND children -> more THEN class --> priority
+RULE 93. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND form -> foster AND children -> 1 THEN class --> priority
+RULE 94. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND form -> foster AND children -> 2 THEN class --> priority
+RULE 95. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND form -> foster AND children -> 3 THEN class --> priority
+RULE 96. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND form -> foster AND children -> more THEN class --> priority
+RULE 97. Coverage: 0.00216. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND form -> incomplete AND children -> 1 THEN class --> priority
+RULE 98. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND form -> incomplete AND children -> 3 THEN class --> priority
+RULE 99. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND form -> incomplete AND children -> more THEN class --> priority
+RULE 100. Coverage: 0.00046. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> very_crit AND form -> complete AND children -> 1 THEN class --> priority
+RULE 101. Coverage: 0.00046. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> very_crit AND form -> complete AND children -> 2 THEN class --> priority
+RULE 102. Coverage: 0.00046. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> very_crit AND form -> completed AND children -> 1 THEN class --> priority
+RULE 103. Coverage: 0.00046. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> very_crit AND form -> completed AND children -> 2 THEN class --> priority
+RULE 104. Coverage: 0.00046. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> very_crit AND form -> incomplete AND children -> 1 THEN class --> priority
+RULE 105. Coverage: 0.00046. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> very_crit AND form -> incomplete AND children -> 2 THEN class --> spec_prior
+RULE 106. Coverage: 0.00278. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND form -> complete AND children -> 1 THEN class --> priority
+RULE 107. Coverage: 0.00216. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND form -> complete AND children -> 2 THEN class --> priority
+RULE 108. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND form -> complete AND children -> 3 THEN class --> priority
+RULE 109. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND form -> complete AND children -> more THEN class --> priority
+RULE 110. Coverage: 0.00216. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND form -> completed AND children -> 1 THEN class --> priority
+RULE 111. Coverage: 0.00216. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND form -> completed AND children -> 2 THEN class --> priority
+RULE 112. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND form -> completed AND children -> 3 THEN class --> priority
+RULE 113. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND form -> completed AND children -> more THEN class --> priority
+RULE 114. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND form -> foster AND children -> 1 THEN class --> priority
+RULE 115. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND form -> foster AND children -> 2 THEN class --> priority
+RULE 116. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND form -> foster AND children -> 3 THEN class --> priority
+RULE 117. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND form -> foster AND children -> more THEN class --> priority
+RULE 118. Coverage: 0.00216. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND form -> incomplete AND children -> 1 THEN class --> priority
+RULE 119. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND form -> incomplete AND children -> 3 THEN class --> priority
+RULE 120. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND form -> incomplete AND children -> more THEN class --> priority
+RULE 121. Coverage: 0.00093. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND form -> complete AND children -> 1 THEN class --> very_recom
+RULE 122. Coverage: 0.00093. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND form -> complete AND children -> 1 THEN class --> very_recom
+RULE 123. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> very_crit AND form -> complete AND children -> 1 THEN class --> priority
+RULE 124. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> very_crit AND form -> complete AND children -> 2 THEN class --> priority
+RULE 125. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> very_crit AND form -> completed AND children -> 1 THEN class --> priority
+RULE 126. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> very_crit AND form -> completed AND children -> 2 THEN class --> priority
+RULE 127. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> very_crit AND form -> incomplete AND children -> 1 THEN class --> priority
+RULE 128. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> very_crit AND form -> incomplete AND children -> 2 THEN class --> spec_prior
+RULE 129. Coverage: 0.00278. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND form -> complete AND children -> 1 THEN class --> priority
+RULE 130. Coverage: 0.00216. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND form -> complete AND children -> 2 THEN class --> priority
+RULE 131. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND form -> complete AND children -> 3 THEN class --> priority
+RULE 132. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND form -> complete AND children -> more THEN class --> priority
+RULE 133. Coverage: 0.00216. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND form -> completed AND children -> 1 THEN class --> priority
+RULE 134. Coverage: 0.00216. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND form -> completed AND children -> 2 THEN class --> priority
+RULE 135. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND form -> completed AND children -> 3 THEN class --> priority
+RULE 136. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND form -> completed AND children -> more THEN class --> priority
+RULE 137. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND form -> foster AND children -> 1 THEN class --> priority
+RULE 138. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND form -> foster AND children -> 2 THEN class --> priority
+RULE 139. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND form -> foster AND children -> 3 THEN class --> priority
+RULE 140. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND form -> foster AND children -> more THEN class --> priority
+RULE 141. Coverage: 0.00216. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND form -> incomplete AND children -> 1 THEN class --> priority
+RULE 142. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND form -> incomplete AND children -> 3 THEN class --> priority
+RULE 143. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND form -> incomplete AND children -> more THEN class --> priority
+RULE 144. Coverage: 0.00093. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND form -> complete AND children -> 1 THEN class --> very_recom
+RULE 145. Coverage: 0.00093. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND form -> complete AND children -> 1 THEN class --> very_recom
+RULE 146. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> very_crit AND form -> complete AND children -> 1 THEN class --> priority
+RULE 147. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> very_crit AND form -> complete AND children -> 2 THEN class --> priority
+RULE 148. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> very_crit AND form -> completed AND children -> 1 THEN class --> priority
+RULE 149. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> very_crit AND form -> completed AND children -> 2 THEN class --> priority
+RULE 150. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> very_crit AND form -> incomplete AND children -> 1 THEN class --> priority
+RULE 151. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> very_crit AND form -> incomplete AND children -> 2 THEN class --> spec_prior
+RULE 152. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND form -> completed AND housing -> critical THEN class --> spec_prior
+RULE 153. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND form -> foster AND housing -> critical THEN class --> spec_prior
+RULE 154. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND form -> foster AND housing -> less_conv THEN class --> spec_prior
+RULE 155. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND form -> incomplete AND housing -> critical THEN class --> spec_prior
+RULE 156. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND form -> completed AND housing -> critical THEN class --> spec_prior
+RULE 157. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND form -> foster AND housing -> critical THEN class --> spec_prior
+RULE 158. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND form -> foster AND housing -> less_conv THEN class --> spec_prior
+RULE 159. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND form -> incomplete AND housing -> critical THEN class --> spec_prior
+RULE 160. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND form -> incomplete AND housing -> critical THEN class --> priority
+RULE 161. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND form -> incomplete AND housing -> critical THEN class --> priority
+RULE 162. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND form -> completed AND housing -> critical THEN class --> spec_prior
+RULE 163. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND form -> foster AND housing -> critical THEN class --> spec_prior
+RULE 164. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND form -> foster AND housing -> less_conv THEN class --> spec_prior
+RULE 165. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND form -> incomplete AND housing -> critical THEN class --> spec_prior
+RULE 166. Coverage: 0.00031. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND form -> incomplete AND housing -> critical THEN class --> priority
+RULE 167. Coverage: 0.00093. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND form -> complete AND housing -> critical THEN class --> priority
+RULE 168. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND form -> completed AND housing -> critical THEN class --> priority
+RULE 169. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND form -> foster AND housing -> critical THEN class --> priority
+RULE 170. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND form -> foster AND housing -> less_conv THEN class --> priority
+RULE 171. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND form -> incomplete AND housing -> critical THEN class --> priority
+RULE 172. Coverage: 0.00093. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND form -> complete AND housing -> critical THEN class --> priority
+RULE 173. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND form -> completed AND housing -> critical THEN class --> priority
+RULE 174. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND form -> foster AND housing -> critical THEN class --> priority
+RULE 175. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND form -> foster AND housing -> less_conv THEN class --> priority
+RULE 176. Coverage: 0.00123. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND form -> incomplete AND housing -> critical THEN class --> priority
+RULE 177. Coverage: 0.00031. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND form -> incomplete AND housing -> critical THEN class --> priority
+RULE 178. Coverage: 0.00093. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND form -> complete AND housing -> critical THEN class --> priority
+RULE 179. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND form -> completed AND housing -> critical THEN class --> priority
+RULE 180. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND form -> foster AND housing -> critical THEN class --> priority
+RULE 181. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND form -> foster AND housing -> less_conv THEN class --> priority
+RULE 182. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND form -> incomplete AND housing -> critical THEN class --> priority
+RULE 183. Coverage: 0.00093. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND form -> complete AND housing -> critical THEN class --> priority
+RULE 184. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND form -> completed AND housing -> critical THEN class --> priority
+RULE 185. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND form -> foster AND housing -> critical THEN class --> priority
+RULE 186. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND form -> foster AND housing -> less_conv THEN class --> priority
+RULE 187. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND form -> incomplete AND housing -> critical THEN class --> priority
+RULE 188. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND form -> completed AND housing -> critical THEN class --> priority
+RULE 189. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND form -> foster AND housing -> critical THEN class --> priority
+RULE 190. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND form -> foster AND housing -> less_conv THEN class --> priority
+RULE 191. Coverage: 0.00123. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND form -> incomplete AND housing -> critical THEN class --> priority
+RULE 192. Coverage: 0.00062. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND form -> foster AND finance -> inconv THEN class --> spec_prior
+RULE 193. Coverage: 0.00062. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND form -> foster AND finance -> inconv THEN class --> spec_prior
+RULE 194. Coverage: 0.00062. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND form -> foster AND finance -> inconv THEN class --> spec_prior
+RULE 195. Coverage: 0.00062. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND form -> foster AND finance -> convenient THEN class --> very_recom
+RULE 196. Coverage: 0.00062. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND form -> foster AND finance -> inconv THEN class --> priority
+RULE 197. Coverage: 0.00062. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND form -> foster AND finance -> convenient THEN class --> very_recom
+RULE 198. Coverage: 0.00062. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND form -> foster AND finance -> inconv THEN class --> priority
+RULE 199. Coverage: 0.00062. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND form -> foster AND finance -> convenient THEN class --> very_recom
+RULE 200. Coverage: 0.00062. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND form -> foster AND finance -> inconv THEN class --> priority
+RULE 201. Coverage: 0.00062. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND form -> foster AND finance -> convenient THEN class --> very_recom
+RULE 202. Coverage: 0.00062. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND form -> foster AND finance -> inconv THEN class --> priority
+RULE 203. Coverage: 0.00062. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND form -> foster AND finance -> convenient THEN class --> very_recom
+RULE 204. Coverage: 0.00062. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND form -> foster AND finance -> inconv THEN class --> priority
+RULE 205. Coverage: 0.00154. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND form -> completed AND social -> problematic THEN class --> spec_prior
+RULE 206. Coverage: 0.00062. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND form -> foster AND social -> problematic THEN class --> spec_prior
+RULE 207. Coverage: 0.00154. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND form -> incomplete AND social -> problematic THEN class --> spec_prior
+RULE 208. Coverage: 0.00154. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND form -> completed AND social -> problematic THEN class --> spec_prior
+RULE 209. Coverage: 0.00062. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND form -> foster AND social -> problematic THEN class --> spec_prior
+RULE 210. Coverage: 0.00154. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND form -> incomplete AND social -> problematic THEN class --> spec_prior
+RULE 211. Coverage: 0.00154. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND form -> completed AND social -> problematic THEN class --> spec_prior
+RULE 212. Coverage: 0.00062. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND form -> foster AND social -> problematic THEN class --> spec_prior
+RULE 213. Coverage: 0.00154. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND form -> incomplete AND social -> problematic THEN class --> spec_prior
+RULE 214. Coverage: 0.00154. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND form -> completed AND health -> priority THEN class --> spec_prior
+RULE 215. Coverage: 0.00062. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND form -> foster AND health -> priority THEN class --> spec_prior
+RULE 216. Coverage: 0.00062. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND form -> foster AND health -> recommended THEN class --> priority
+RULE 217. Coverage: 0.00154. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND form -> incomplete AND health -> priority THEN class --> spec_prior
+RULE 218. Coverage: 0.00154. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND form -> completed AND health -> priority THEN class --> spec_prior
+RULE 219. Coverage: 0.00062. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND form -> foster AND health -> priority THEN class --> spec_prior
+RULE 220. Coverage: 0.00062. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND form -> foster AND health -> recommended THEN class --> priority
+RULE 221. Coverage: 0.00154. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND form -> incomplete AND health -> priority THEN class --> spec_prior
+RULE 222. Coverage: 0.00154. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND form -> completed AND health -> priority THEN class --> spec_prior
+RULE 223. Coverage: 0.00062. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND form -> foster AND health -> priority THEN class --> spec_prior
+RULE 224. Coverage: 0.00062. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND form -> foster AND health -> recommended THEN class --> priority
+RULE 225. Coverage: 0.00154. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND form -> incomplete AND health -> priority THEN class --> spec_prior
+RULE 226. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND children -> 2 AND housing -> critical THEN class --> spec_prior
+RULE 227. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND children -> 3 AND housing -> critical THEN class --> spec_prior
+RULE 228. Coverage: 0.00093. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND children -> 3 AND housing -> less_conv THEN class --> spec_prior
+RULE 229. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND children -> more AND housing -> critical THEN class --> spec_prior
+RULE 230. Coverage: 0.00093. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND children -> more AND housing -> less_conv THEN class --> spec_prior
+RULE 231. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND children -> 2 AND housing -> critical THEN class --> spec_prior
+RULE 232. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND children -> 3 AND housing -> critical THEN class --> spec_prior
+RULE 233. Coverage: 0.00093. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND children -> 3 AND housing -> less_conv THEN class --> spec_prior
+RULE 234. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND children -> more AND housing -> critical THEN class --> spec_prior
+RULE 235. Coverage: 0.00093. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND children -> more AND housing -> less_conv THEN class --> spec_prior
+RULE 236. Coverage: 0.00031. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND children -> 2 AND housing -> critical THEN class --> spec_prior
+RULE 237. Coverage: 0.00031. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND children -> 3 AND housing -> critical THEN class --> spec_prior
+RULE 238. Coverage: 0.00093. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND children -> 3 AND housing -> less_conv THEN class --> spec_prior
+RULE 239. Coverage: 0.00031. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND children -> more AND housing -> critical THEN class --> spec_prior
+RULE 240. Coverage: 0.00093. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND children -> more AND housing -> less_conv THEN class --> spec_prior
+RULE 241. Coverage: 0.00062. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND children -> 1 AND housing -> convenient THEN class --> very_recom
+RULE 242. Coverage: 0.00062. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND children -> 1 AND housing -> less_conv THEN class --> very_recom
+RULE 243. Coverage: 0.00093. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND children -> 3 AND housing -> less_conv THEN class --> priority
+RULE 244. Coverage: 0.00093. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND children -> more AND housing -> less_conv THEN class --> priority
+RULE 245. Coverage: 0.00062. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND children -> 1 AND housing -> convenient THEN class --> very_recom
+RULE 246. Coverage: 0.00062. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND children -> 1 AND housing -> less_conv THEN class --> very_recom
+RULE 247. Coverage: 0.00093. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND children -> 3 AND housing -> less_conv THEN class --> priority
+RULE 248. Coverage: 0.00093. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND children -> more AND housing -> less_conv THEN class --> priority
+RULE 249. Coverage: 0.00062. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND children -> 1 AND housing -> convenient THEN class --> very_recom
+RULE 250. Coverage: 0.00062. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND children -> 1 AND housing -> less_conv THEN class --> very_recom
+RULE 251. Coverage: 0.00093. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND children -> 3 AND housing -> less_conv THEN class --> priority
+RULE 252. Coverage: 0.00093. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND children -> more AND housing -> less_conv THEN class --> priority
+RULE 253. Coverage: 0.00062. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND children -> 1 AND housing -> convenient THEN class --> very_recom
+RULE 254. Coverage: 0.00062. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND children -> 1 AND housing -> less_conv THEN class --> very_recom
+RULE 255. Coverage: 0.00093. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND children -> 3 AND housing -> less_conv THEN class --> priority
+RULE 256. Coverage: 0.00093. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND children -> more AND housing -> less_conv THEN class --> priority
+RULE 257. Coverage: 0.00031. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND children -> 1 AND housing -> critical THEN class --> very_recom
+RULE 258. Coverage: 0.00093. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND children -> 1 AND housing -> less_conv THEN class --> very_recom
+RULE 259. Coverage: 0.00031. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND children -> 2 AND housing -> critical THEN class --> priority
+RULE 260. Coverage: 0.00031. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND children -> 3 AND housing -> critical THEN class --> priority
+RULE 261. Coverage: 0.00093. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND children -> 3 AND housing -> less_conv THEN class --> priority
+RULE 262. Coverage: 0.00031. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND children -> more AND housing -> critical THEN class --> priority
+RULE 263. Coverage: 0.00093. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND children -> more AND housing -> less_conv THEN class --> priority
+RULE 264. Coverage: 0.00046. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND children -> 3 AND finance -> inconv THEN class --> spec_prior
+RULE 265. Coverage: 0.00046. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND children -> more AND finance -> inconv THEN class --> spec_prior
+RULE 266. Coverage: 0.00046. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND children -> 3 AND finance -> inconv THEN class --> spec_prior
+RULE 267. Coverage: 0.00046. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND children -> more AND finance -> inconv THEN class --> spec_prior
+RULE 268. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND children -> 3 AND finance -> inconv THEN class --> spec_prior
+RULE 269. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND children -> more AND finance -> inconv THEN class --> spec_prior
+RULE 270. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND children -> 3 AND finance -> convenient THEN class --> very_recom
+RULE 271. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND children -> 3 AND finance -> inconv THEN class --> priority
+RULE 272. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND children -> more AND finance -> convenient THEN class --> very_recom
+RULE 273. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND children -> more AND finance -> inconv THEN class --> priority
+RULE 274. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND children -> 3 AND finance -> convenient THEN class --> very_recom
+RULE 275. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND children -> 3 AND finance -> inconv THEN class --> priority
+RULE 276. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND children -> more AND finance -> convenient THEN class --> very_recom
+RULE 277. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND children -> more AND finance -> inconv THEN class --> priority
+RULE 278. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND children -> 3 AND finance -> convenient THEN class --> very_recom
+RULE 279. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND children -> 3 AND finance -> inconv THEN class --> priority
+RULE 280. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND children -> more AND finance -> convenient THEN class --> very_recom
+RULE 281. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND children -> more AND finance -> inconv THEN class --> priority
+RULE 282. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND children -> 3 AND finance -> convenient THEN class --> very_recom
+RULE 283. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND children -> 3 AND finance -> inconv THEN class --> priority
+RULE 284. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND children -> more AND finance -> convenient THEN class --> very_recom
+RULE 285. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND children -> more AND finance -> inconv THEN class --> priority
+RULE 286. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND children -> 1 AND finance -> inconv THEN class --> very_recom
+RULE 287. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND children -> 3 AND finance -> convenient THEN class --> very_recom
+RULE 288. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND children -> 3 AND finance -> inconv THEN class --> priority
+RULE 289. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND children -> more AND finance -> convenient THEN class --> very_recom
+RULE 290. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> proper AND children -> more AND finance -> inconv THEN class --> priority
+RULE 291. Coverage: 0.00062. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND children -> 2 AND social -> problematic THEN class --> spec_prior
+RULE 292. Coverage: 0.00015. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND children -> 3 AND social -> problematic THEN class --> spec_prior
+RULE 293. Coverage: 0.00015. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND children -> more AND social -> problematic THEN class --> spec_prior
+RULE 294. Coverage: 0.00062. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND children -> 2 AND social -> problematic THEN class --> spec_prior
+RULE 295. Coverage: 0.00015. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND children -> 3 AND social -> problematic THEN class --> spec_prior
+RULE 296. Coverage: 0.00015. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND children -> more AND social -> problematic THEN class --> spec_prior
+RULE 297. Coverage: 0.00062. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND children -> 2 AND social -> problematic THEN class --> spec_prior
+RULE 298. Coverage: 0.00015. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND children -> 3 AND social -> problematic THEN class --> spec_prior
+RULE 299. Coverage: 0.00015. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND children -> more AND social -> problematic THEN class --> spec_prior
+RULE 300. Coverage: 0.00062. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND children -> 2 AND health -> priority THEN class --> spec_prior
+RULE 301. Coverage: 0.00015. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND children -> 3 AND health -> priority THEN class --> spec_prior
+RULE 302. Coverage: 0.00046. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND children -> 3 AND health -> recommended THEN class --> priority
+RULE 303. Coverage: 0.00015. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND children -> more AND health -> priority THEN class --> spec_prior
+RULE 304. Coverage: 0.00046. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND children -> more AND health -> recommended THEN class --> priority
+RULE 305. Coverage: 0.00062. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND children -> 2 AND health -> priority THEN class --> spec_prior
+RULE 306. Coverage: 0.00015. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND children -> 3 AND health -> priority THEN class --> spec_prior
+RULE 307. Coverage: 0.00046. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND children -> 3 AND health -> recommended THEN class --> priority
+RULE 308. Coverage: 0.00015. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND children -> more AND health -> priority THEN class --> spec_prior
+RULE 309. Coverage: 0.00046. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND children -> more AND health -> recommended THEN class --> priority
+RULE 310. Coverage: 0.00062. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND children -> 2 AND health -> priority THEN class --> spec_prior
+RULE 311. Coverage: 0.00015. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND children -> 3 AND health -> priority THEN class --> spec_prior
+RULE 312. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND children -> 3 AND health -> recommended THEN class --> priority
+RULE 313. Coverage: 0.00015. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND children -> more AND health -> priority THEN class --> spec_prior
+RULE 314. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND children -> more AND health -> recommended THEN class --> priority
+RULE 315. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND housing -> convenient AND finance -> convenient THEN class --> priority
+RULE 316. Coverage: 0.00123. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND housing -> convenient AND finance -> convenient THEN class --> priority
+RULE 317. Coverage: 0.00046. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND housing -> convenient AND finance -> convenient THEN class --> priority
+RULE 318. Coverage: 0.00046. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND housing -> convenient AND finance -> convenient THEN class --> priority
+RULE 319. Coverage: 0.00116. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND housing -> convenient AND finance -> convenient THEN class --> priority
+RULE 320. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND housing -> convenient AND finance -> convenient THEN class --> priority
+RULE 321. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> less_proper AND housing -> convenient AND finance -> convenient THEN class --> very_recom
+RULE 322. Coverage: 0.00046. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> proper AND housing -> convenient AND finance -> convenient THEN class --> very_recom
+RULE 323. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND housing -> convenient AND finance -> convenient THEN class --> priority
+RULE 324. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> improper AND housing -> convenient AND finance -> convenient THEN class --> very_recom
+RULE 325. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND has_nurs -> less_proper AND housing -> convenient AND finance -> convenient THEN class --> very_recom
+RULE 326. Coverage: 0.00015. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND housing -> convenient AND social -> problematic THEN class --> spec_prior
+RULE 327. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND housing -> critical AND social -> problematic THEN class --> spec_prior
+RULE 328. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND housing -> less_conv AND social -> problematic THEN class --> spec_prior
+RULE 329. Coverage: 0.00015. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND housing -> convenient AND social -> problematic THEN class --> spec_prior
+RULE 330. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND housing -> critical AND social -> problematic THEN class --> spec_prior
+RULE 331. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND housing -> less_conv AND social -> problematic THEN class --> spec_prior
+RULE 332. Coverage: 0.00015. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND housing -> convenient AND social -> problematic THEN class --> spec_prior
+RULE 333. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND housing -> less_conv AND social -> problematic THEN class --> spec_prior
+RULE 334. Coverage: 0.00015. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND housing -> convenient AND social -> problematic THEN class --> spec_prior
+RULE 335. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND housing -> less_conv AND social -> problematic THEN class --> spec_prior
+RULE 336. Coverage: 0.00015. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND housing -> convenient AND social -> problematic THEN class --> spec_prior
+RULE 337. Coverage: 0.00031. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND housing -> critical AND social -> problematic THEN class --> spec_prior
+RULE 338. Coverage: 0.00031. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND housing -> less_conv AND social -> problematic THEN class --> spec_prior
+RULE 339. Coverage: 0.00015. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND housing -> convenient AND social -> problematic THEN class --> spec_prior
+RULE 340. Coverage: 0.00031. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND housing -> less_conv AND social -> problematic THEN class --> spec_prior
+RULE 341. Coverage: 0.00015. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND housing -> convenient AND social -> problematic THEN class --> spec_prior
+RULE 342. Coverage: 0.00031. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND housing -> less_conv AND social -> problematic THEN class --> spec_prior
+RULE 343. Coverage: 0.00015. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND housing -> convenient AND health -> priority THEN class --> spec_prior
+RULE 344. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND housing -> critical AND health -> priority THEN class --> spec_prior
+RULE 345. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND housing -> critical AND health -> recommended THEN class --> priority
+RULE 346. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> critical AND housing -> less_conv AND health -> priority THEN class --> spec_prior
+RULE 347. Coverage: 0.00015. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND housing -> convenient AND health -> priority THEN class --> spec_prior
+RULE 348. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND housing -> critical AND health -> priority THEN class --> spec_prior
+RULE 349. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND housing -> critical AND health -> recommended THEN class --> priority
+RULE 350. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> improper AND housing -> less_conv AND health -> priority THEN class --> spec_prior
+RULE 351. Coverage: 0.00015. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND housing -> convenient AND health -> priority THEN class --> spec_prior
+RULE 352. Coverage: 0.00015. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND housing -> convenient AND health -> recommended THEN class --> priority
+RULE 353. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND housing -> less_conv AND health -> priority THEN class --> spec_prior
+RULE 354. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> less_proper AND housing -> less_conv AND health -> recommended THEN class --> priority
+RULE 355. Coverage: 0.00015. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND housing -> convenient AND health -> priority THEN class --> spec_prior
+RULE 356. Coverage: 0.00015. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND housing -> convenient AND health -> recommended THEN class --> priority
+RULE 357. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND housing -> less_conv AND health -> priority THEN class --> spec_prior
+RULE 358. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND has_nurs -> proper AND housing -> less_conv AND health -> recommended THEN class --> priority
+RULE 359. Coverage: 0.00015. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND housing -> convenient AND health -> priority THEN class --> spec_prior
+RULE 360. Coverage: 0.00031. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND housing -> critical AND health -> priority THEN class --> spec_prior
+RULE 361. Coverage: 0.00031. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND housing -> critical AND health -> recommended THEN class --> priority
+RULE 362. Coverage: 0.00031. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> critical AND housing -> less_conv AND health -> priority THEN class --> spec_prior
+RULE 363. Coverage: 0.00015. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND housing -> convenient AND health -> priority THEN class --> spec_prior
+RULE 364. Coverage: 0.00015. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND housing -> convenient AND health -> recommended THEN class --> priority
+RULE 365. Coverage: 0.00031. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND housing -> less_conv AND health -> priority THEN class --> spec_prior
+RULE 366. Coverage: 0.00031. Precision: 1.0
+IF parents -> pretentious AND has_nurs -> improper AND housing -> less_conv AND health -> recommended THEN class --> priority
+RULE 367. Coverage: 0.00015. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND housing -> convenient AND health -> priority THEN class --> spec_prior
+RULE 368. Coverage: 0.00015. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND housing -> convenient AND health -> recommended THEN class --> priority
+RULE 369. Coverage: 0.00031. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND housing -> less_conv AND health -> priority THEN class --> spec_prior
+RULE 370. Coverage: 0.00031. Precision: 1.0
+IF parents -> usual AND has_nurs -> critical AND housing -> less_conv AND health -> recommended THEN class --> priority
+RULE 371. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND form -> complete AND children -> 1 AND housing -> convenient THEN class --> priority
+RULE 372. Coverage: 0.00062. Precision: 1.0
+IF parents -> great_pret AND form -> complete AND children -> 1 AND housing -> less_conv THEN class --> priority
+RULE 373. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND form -> complete AND children -> 2 AND housing -> convenient THEN class --> priority
+RULE 374. Coverage: 0.00062. Precision: 1.0
+IF parents -> great_pret AND form -> complete AND children -> 2 AND housing -> less_conv THEN class --> priority
+RULE 375. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND form -> completed AND children -> 1 AND housing -> convenient THEN class --> priority
+RULE 376. Coverage: 0.00062. Precision: 1.0
+IF parents -> great_pret AND form -> completed AND children -> 1 AND housing -> less_conv THEN class --> priority
+RULE 377. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND form -> completed AND children -> 2 AND housing -> convenient THEN class --> priority
+RULE 378. Coverage: 0.00062. Precision: 1.0
+IF parents -> great_pret AND form -> completed AND children -> 2 AND housing -> less_conv THEN class --> priority
+RULE 379. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND form -> incomplete AND children -> 1 AND housing -> convenient THEN class --> priority
+RULE 380. Coverage: 0.00062. Precision: 1.0
+IF parents -> great_pret AND form -> incomplete AND children -> 1 AND housing -> less_conv THEN class --> priority
+RULE 381. Coverage: 0.00031. Precision: 1.0
+IF parents -> great_pret AND form -> incomplete AND children -> 2 AND housing -> convenient THEN class --> spec_prior
+RULE 382. Coverage: 0.00062. Precision: 1.0
+IF parents -> great_pret AND form -> incomplete AND children -> 2 AND housing -> less_conv THEN class --> spec_prior
+RULE 383. Coverage: 0.00015. Precision: 1.0
+IF parents -> pretentious AND form -> complete AND children -> 1 AND housing -> convenient THEN class --> priority
+RULE 384. Coverage: 0.00031. Precision: 1.0
+IF parents -> pretentious AND form -> complete AND children -> 1 AND housing -> less_conv THEN class --> priority
+RULE 385. Coverage: 0.00015. Precision: 1.0
+IF parents -> pretentious AND form -> completed AND children -> 1 AND housing -> convenient THEN class --> priority
+RULE 386. Coverage: 0.00031. Precision: 1.0
+IF parents -> pretentious AND form -> completed AND children -> 1 AND housing -> less_conv THEN class --> priority
+RULE 387. Coverage: 0.00015. Precision: 1.0
+IF parents -> pretentious AND form -> incomplete AND children -> 1 AND housing -> convenient THEN class --> priority
+RULE 388. Coverage: 0.00031. Precision: 1.0
+IF parents -> pretentious AND form -> incomplete AND children -> 1 AND housing -> less_conv THEN class --> priority
+RULE 389. Coverage: 0.00015. Precision: 1.0
+IF parents -> usual AND form -> complete AND children -> 1 AND housing -> convenient THEN class --> recommend
+RULE 390. Coverage: 0.00062. Precision: 1.0
+IF parents -> usual AND form -> complete AND children -> 2 AND housing -> convenient THEN class --> very_recom
+RULE 391. Coverage: 0.00093. Precision: 1.0
+IF parents -> usual AND form -> complete AND children -> 2 AND housing -> less_conv THEN class --> very_recom
+RULE 392. Coverage: 0.00015. Precision: 1.0
+IF parents -> usual AND form -> completed AND children -> 1 AND housing -> convenient THEN class --> very_recom
+RULE 393. Coverage: 0.00062. Precision: 1.0
+IF parents -> usual AND form -> completed AND children -> 2 AND housing -> convenient THEN class --> very_recom
+RULE 394. Coverage: 0.00093. Precision: 1.0
+IF parents -> usual AND form -> completed AND children -> 2 AND housing -> less_conv THEN class --> very_recom
+RULE 395. Coverage: 0.00015. Precision: 1.0
+IF parents -> usual AND form -> incomplete AND children -> 1 AND housing -> convenient THEN class --> very_recom
+RULE 396. Coverage: 0.00093. Precision: 1.0
+IF parents -> usual AND form -> incomplete AND children -> 2 AND housing -> less_conv THEN class --> priority
+RULE 397. Coverage: 0.00015. Precision: 1.0
+IF parents -> usual AND form -> incomplete AND children -> 2 AND finance -> convenient THEN class --> very_recom
+RULE 398. Coverage: 0.00046. Precision: 1.0
+IF parents -> usual AND form -> incomplete AND children -> 2 AND finance -> inconv THEN class --> priority
+RULE 399. Coverage: 0.00015. Precision: 1.0
+IF has_nurs -> critical AND form -> complete AND children -> 2 AND housing -> convenient THEN class --> priority
+RULE 400. Coverage: 0.00031. Precision: 1.0
+IF has_nurs -> critical AND form -> complete AND children -> 2 AND housing -> less_conv THEN class --> priority
+RULE 401. Coverage: 0.00015. Precision: 1.0
+IF has_nurs -> critical AND form -> completed AND children -> 2 AND housing -> convenient THEN class --> priority
+RULE 402. Coverage: 0.00031. Precision: 1.0
+IF has_nurs -> critical AND form -> completed AND children -> 2 AND housing -> less_conv THEN class --> priority
+RULE 403. Coverage: 0.00015. Precision: 1.0
+IF has_nurs -> critical AND form -> incomplete AND children -> 2 AND housing -> convenient THEN class --> spec_prior
+RULE 404. Coverage: 0.00031. Precision: 1.0
+IF has_nurs -> critical AND form -> incomplete AND children -> 2 AND housing -> less_conv THEN class --> spec_prior
+RULE 405. Coverage: 0.00015. Precision: 1.0
+IF has_nurs -> less_proper AND form -> complete AND children -> 2 AND housing -> convenient THEN class --> very_recom
+RULE 406. Coverage: 0.00031. Precision: 1.0
+IF has_nurs -> less_proper AND form -> complete AND children -> 2 AND housing -> less_conv THEN class --> very_recom
+RULE 407. Coverage: 0.00015. Precision: 1.0
+IF has_nurs -> less_proper AND form -> completed AND children -> 2 AND housing -> convenient THEN class --> very_recom
+RULE 408. Coverage: 0.00031. Precision: 1.0
+IF has_nurs -> less_proper AND form -> completed AND children -> 2 AND housing -> less_conv THEN class --> very_recom
+RULE 409. Coverage: 0.00015. Precision: 1.0
+IF has_nurs -> less_proper AND form -> incomplete AND children -> 2 AND housing -> convenient THEN class --> priority
+RULE 410. Coverage: 0.00031. Precision: 1.0
+IF has_nurs -> less_proper AND form -> incomplete AND children -> 2 AND housing -> less_conv THEN class --> priority
+RULE 411. Coverage: 0.00015. Precision: 1.0
+IF has_nurs -> proper AND form -> complete AND children -> 2 AND housing -> convenient THEN class --> very_recom
+RULE 412. Coverage: 0.00031. Precision: 1.0
+IF has_nurs -> proper AND form -> complete AND children -> 2 AND housing -> less_conv THEN class --> very_recom
+RULE 413. Coverage: 0.00015. Precision: 1.0
+IF has_nurs -> proper AND form -> completed AND children -> 2 AND housing -> convenient THEN class --> very_recom
+RULE 414. Coverage: 0.00031. Precision: 1.0
+IF has_nurs -> proper AND form -> completed AND children -> 2 AND housing -> less_conv THEN class --> very_recom
+RULE 415. Coverage: 0.00015. Precision: 1.0
+IF has_nurs -> proper AND form -> incomplete AND children -> 2 AND housing -> convenient THEN class --> priority
+RULE 416. Coverage: 0.00031. Precision: 1.0
+IF has_nurs -> proper AND form -> incomplete AND children -> 2 AND housing -> less_conv THEN class --> priority

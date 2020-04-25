@@ -1,0 +1,216 @@
+RULE 0. Coverage: 0.33681. Precision: 1
+IF persons -> 2 THEN class --> unacc
+RULE 1. Coverage: 0.21296. Precision: 1
+IF safety -> low THEN class --> unacc
+RULE 2. Coverage: 0.03472. Precision: 1
+IF buying -> high AND maint -> vhigh THEN class --> unacc
+RULE 3. Coverage: 0.02199. Precision: 1
+IF buying -> vhigh AND maint -> high THEN class --> unacc
+RULE 4. Coverage: 0.02546. Precision: 1
+IF buying -> vhigh AND maint -> vhigh THEN class --> unacc
+RULE 5. Coverage: 0.0162. Precision: 1
+IF buying -> vhigh AND doors -> 5more THEN class --> acc
+RULE 6. Coverage: 0.02546. Precision: 1
+IF buying -> high AND lug_boot -> big THEN class --> acc
+RULE 7. Coverage: 0.01273. Precision: 1
+IF buying -> vhigh AND lug_boot -> big THEN class --> acc
+RULE 8. Coverage: 0.01157. Precision: 1
+IF buying -> vhigh AND safety -> high THEN class --> acc
+RULE 9. Coverage: 0.02083. Precision: 1
+IF maint -> vhigh AND lug_boot -> big THEN class --> acc
+RULE 10. Coverage: 0.00463. Precision: 1
+IF buying -> high AND maint -> high AND doors -> 5more THEN class --> acc
+RULE 11. Coverage: 0.00347. Precision: 1
+IF buying -> high AND maint -> low AND doors -> 2 THEN class --> unacc
+RULE 12. Coverage: 0.00116. Precision: 1
+IF buying -> high AND maint -> low AND doors -> 5more THEN class --> unacc
+RULE 13. Coverage: 0.00579. Precision: 1
+IF buying -> high AND maint -> med AND doors -> 2 THEN class --> unacc
+RULE 14. Coverage: 0.00231. Precision: 1
+IF buying -> vhigh AND maint -> low AND doors -> 3 THEN class --> unacc
+RULE 15. Coverage: 0.00116. Precision: 1
+IF buying -> vhigh AND maint -> med AND doors -> 2 THEN class --> unacc
+RULE 16. Coverage: 0.00116. Precision: 1
+IF buying -> vhigh AND maint -> low AND persons -> 4 THEN class --> acc
+RULE 17. Coverage: 0.00116. Precision: 1
+IF buying -> vhigh AND maint -> low AND persons -> more THEN class --> unacc
+RULE 18. Coverage: 0.00926. Precision: 1
+IF buying -> low AND maint -> high AND lug_boot -> small THEN class --> acc
+RULE 19. Coverage: 0.00926. Precision: 1
+IF buying -> med AND maint -> high AND lug_boot -> big THEN class --> acc
+RULE 20. Coverage: 0.00231. Precision: 1
+IF buying -> vhigh AND maint -> med AND lug_boot -> med THEN class --> acc
+RULE 21. Coverage: 0.00347. Precision: 1
+IF buying -> vhigh AND maint -> med AND lug_boot -> small THEN class --> unacc
+RULE 22. Coverage: 0.0081. Precision: 1
+IF buying -> high AND maint -> high AND safety -> high THEN class --> acc
+RULE 23. Coverage: 0.00116. Precision: 1
+IF buying -> high AND maint -> low AND safety -> high THEN class --> acc
+RULE 24. Coverage: 0.01157. Precision: 1
+IF buying -> high AND maint -> med AND safety -> high THEN class --> acc
+RULE 25. Coverage: 0.01042. Precision: 1
+IF buying -> low AND maint -> high AND safety -> high THEN class --> vgood
+RULE 26. Coverage: 0.00694. Precision: 1
+IF buying -> low AND maint -> high AND safety -> med THEN class --> acc
+RULE 27. Coverage: 0.01389. Precision: 1
+IF buying -> low AND maint -> vhigh AND safety -> high THEN class --> acc
+RULE 28. Coverage: 0.00116. Precision: 1
+IF buying -> high AND doors -> 2 AND persons -> 4 THEN class --> unacc
+RULE 29. Coverage: 0.00579. Precision: 1
+IF buying -> high AND doors -> 3 AND persons -> 4 THEN class --> unacc
+RULE 30. Coverage: 0.00231. Precision: 1
+IF buying -> high AND doors -> 3 AND persons -> more THEN class --> acc
+RULE 31. Coverage: 0.00347. Precision: 1
+IF buying -> high AND doors -> 4 AND lug_boot -> med THEN class --> acc
+RULE 32. Coverage: 0.00463. Precision: 1
+IF buying -> high AND doors -> 4 AND lug_boot -> small THEN class --> unacc
+RULE 33. Coverage: 0.00116. Precision: 1
+IF buying -> high AND doors -> 5more AND lug_boot -> med THEN class --> acc
+RULE 34. Coverage: 0.00116. Precision: 1
+IF buying -> high AND doors -> 5more AND lug_boot -> small THEN class --> unacc
+RULE 35. Coverage: 0.01157. Precision: 1
+IF buying -> low AND lug_boot -> big AND safety -> high THEN class --> vgood
+RULE 36. Coverage: 0.0081. Precision: 1
+IF buying -> low AND lug_boot -> big AND safety -> med THEN class --> good
+RULE 37. Coverage: 0.01042. Precision: 1
+IF buying -> med AND lug_boot -> big AND safety -> high THEN class --> vgood
+RULE 38. Coverage: 0.00231. Precision: 1
+IF maint -> high AND doors -> 3 AND persons -> 4 THEN class --> acc
+RULE 39. Coverage: 0.00116. Precision: 1
+IF maint -> high AND doors -> 4 AND persons -> 4 THEN class --> unacc
+RULE 40. Coverage: 0.00231. Precision: 1
+IF maint -> high AND doors -> 5more AND persons -> more THEN class --> acc
+RULE 41. Coverage: 0.00347. Precision: 1
+IF maint -> med AND doors -> 3 AND persons -> 4 THEN class --> acc
+RULE 42. Coverage: 0.00463. Precision: 1
+IF maint -> med AND doors -> 3 AND persons -> more THEN class --> acc
+RULE 43. Coverage: 0.00347. Precision: 1
+IF maint -> vhigh AND doors -> 3 AND persons -> more THEN class --> acc
+RULE 44. Coverage: 0.00116. Precision: 1
+IF maint -> vhigh AND doors -> 4 AND persons -> 4 THEN class --> unacc
+RULE 45. Coverage: 0.00116. Precision: 1
+IF maint -> vhigh AND doors -> 5more AND persons -> more THEN class --> unacc
+RULE 46. Coverage: 0.00347. Precision: 1
+IF maint -> high AND doors -> 2 AND lug_boot -> small THEN class --> unacc
+RULE 47. Coverage: 0.00116. Precision: 1
+IF maint -> high AND doors -> 3 AND lug_boot -> med THEN class --> acc
+RULE 48. Coverage: 0.00116. Precision: 1
+IF maint -> high AND doors -> 3 AND lug_boot -> small THEN class --> unacc
+RULE 49. Coverage: 0.00116. Precision: 1
+IF maint -> high AND doors -> 4 AND lug_boot -> med THEN class --> acc
+RULE 50. Coverage: 0.00116. Precision: 1
+IF maint -> high AND doors -> 4 AND lug_boot -> small THEN class --> unacc
+RULE 51. Coverage: 0.00116. Precision: 1
+IF maint -> low AND doors -> 2 AND lug_boot -> big THEN class --> good
+RULE 52. Coverage: 0.00116. Precision: 1
+IF maint -> low AND doors -> 3 AND lug_boot -> big THEN class --> good
+RULE 53. Coverage: 0.00231. Precision: 1
+IF maint -> low AND doors -> 4 AND lug_boot -> big THEN class --> good
+RULE 54. Coverage: 0.00347. Precision: 1
+IF maint -> low AND doors -> 4 AND lug_boot -> med THEN class --> vgood
+RULE 55. Coverage: 0.00231. Precision: 1
+IF maint -> low AND doors -> 5more AND lug_boot -> big THEN class --> good
+RULE 56. Coverage: 0.00231. Precision: 1
+IF maint -> med AND doors -> 2 AND lug_boot -> big THEN class --> acc
+RULE 57. Coverage: 0.00347. Precision: 1
+IF maint -> med AND doors -> 2 AND lug_boot -> med THEN class --> acc
+RULE 58. Coverage: 0.00116. Precision: 1
+IF maint -> med AND doors -> 4 AND lug_boot -> big THEN class --> acc
+RULE 59. Coverage: 0.00347. Precision: 1
+IF maint -> med AND doors -> 4 AND lug_boot -> small THEN class --> acc
+RULE 60. Coverage: 0.00116. Precision: 1
+IF maint -> med AND doors -> 5more AND lug_boot -> big THEN class --> acc
+RULE 61. Coverage: 0.00347. Precision: 1
+IF maint -> vhigh AND doors -> 2 AND lug_boot -> small THEN class --> unacc
+RULE 62. Coverage: 0.00116. Precision: 1
+IF maint -> vhigh AND doors -> 3 AND lug_boot -> small THEN class --> unacc
+RULE 63. Coverage: 0.00231. Precision: 1
+IF maint -> vhigh AND doors -> 4 AND lug_boot -> med THEN class --> acc
+RULE 64. Coverage: 0.00231. Precision: 1
+IF maint -> vhigh AND doors -> 5more AND lug_boot -> med THEN class --> acc
+RULE 65. Coverage: 0.00231. Precision: 1
+IF maint -> vhigh AND doors -> 5more AND lug_boot -> small THEN class --> unacc
+RULE 66. Coverage: 0.00231. Precision: 1
+IF maint -> high AND doors -> 2 AND safety -> high THEN class --> acc
+RULE 67. Coverage: 0.00231. Precision: 1
+IF maint -> high AND doors -> 2 AND safety -> med THEN class --> unacc
+RULE 68. Coverage: 0.00116. Precision: 1
+IF maint -> high AND doors -> 5more AND safety -> high THEN class --> acc
+RULE 69. Coverage: 0.00116. Precision: 1
+IF maint -> high AND doors -> 5more AND safety -> med THEN class --> unacc
+RULE 70. Coverage: 0.00231. Precision: 1
+IF maint -> low AND doors -> 3 AND safety -> med THEN class --> acc
+RULE 71. Coverage: 0.00231. Precision: 1
+IF maint -> low AND doors -> 4 AND safety -> high THEN class --> good
+RULE 72. Coverage: 0.00231. Precision: 1
+IF maint -> low AND doors -> 4 AND safety -> med THEN class --> acc
+RULE 73. Coverage: 0.00231. Precision: 1
+IF maint -> med AND doors -> 4 AND safety -> high THEN class --> vgood
+RULE 74. Coverage: 0.00347. Precision: 1
+IF maint -> med AND doors -> 5more AND safety -> med THEN class --> acc
+RULE 75. Coverage: 0.00231. Precision: 1
+IF maint -> vhigh AND doors -> 2 AND safety -> high THEN class --> acc
+RULE 76. Coverage: 0.00231. Precision: 1
+IF maint -> vhigh AND doors -> 2 AND safety -> med THEN class --> unacc
+RULE 77. Coverage: 0.00116. Precision: 1
+IF maint -> vhigh AND doors -> 3 AND safety -> high THEN class --> acc
+RULE 78. Coverage: 0.00116. Precision: 1
+IF maint -> vhigh AND doors -> 3 AND safety -> med THEN class --> unacc
+RULE 79. Coverage: 0.00116. Precision: 1
+IF maint -> vhigh AND doors -> 4 AND safety -> high THEN class --> acc
+RULE 80. Coverage: 0.00231. Precision: 1
+IF maint -> vhigh AND doors -> 4 AND safety -> med THEN class --> unacc
+RULE 81. Coverage: 0.00231. Precision: 1
+IF maint -> med AND persons -> more AND lug_boot -> small THEN class --> unacc
+RULE 82. Coverage: 0.00231. Precision: 1
+IF maint -> med AND persons -> more AND safety -> high THEN class --> vgood
+RULE 83. Coverage: 0.00116. Precision: 1
+IF maint -> med AND persons -> more AND safety -> med THEN class --> good
+RULE 84. Coverage: 0.00231. Precision: 1
+IF maint -> med AND lug_boot -> med AND safety -> high THEN class --> vgood
+RULE 85. Coverage: 0.00116. Precision: 1
+IF maint -> med AND lug_boot -> small AND safety -> med THEN class --> acc
+RULE 86. Coverage: 0.00231. Precision: 1
+IF doors -> 2 AND persons -> more AND lug_boot -> small THEN class --> unacc
+RULE 87. Coverage: 0.00231. Precision: 1
+IF doors -> 3 AND persons -> 4 AND lug_boot -> med THEN class --> good
+RULE 88. Coverage: 0.00116. Precision: 1
+IF doors -> 3 AND persons -> 4 AND lug_boot -> small THEN class --> good
+RULE 89. Coverage: 0.00116. Precision: 1
+IF doors -> 3 AND persons -> more AND lug_boot -> med THEN class --> vgood
+RULE 90. Coverage: 0.00116. Precision: 1
+IF doors -> 3 AND persons -> more AND lug_boot -> small THEN class --> good
+RULE 91. Coverage: 0.00116. Precision: 1
+IF doors -> 5more AND persons -> more AND lug_boot -> small THEN class --> acc
+RULE 92. Coverage: 0.00116. Precision: 1
+IF doors -> 2 AND persons -> 4 AND safety -> med THEN class --> acc
+RULE 93. Coverage: 0.00231. Precision: 1
+IF doors -> 2 AND persons -> more AND safety -> high THEN class --> good
+RULE 94. Coverage: 0.00231. Precision: 1
+IF doors -> 2 AND persons -> more AND safety -> med THEN class --> acc
+RULE 95. Coverage: 0.00116. Precision: 1
+IF doors -> 5more AND persons -> more AND safety -> high THEN class --> vgood
+RULE 96. Coverage: 0.00231. Precision: 1
+IF doors -> 5more AND persons -> more AND safety -> med THEN class --> good
+RULE 97. Coverage: 0.00116. Precision: 1
+IF doors -> 2 AND lug_boot -> med AND safety -> high THEN class --> good
+RULE 98. Coverage: 0.00116. Precision: 1
+IF doors -> 5more AND lug_boot -> med AND safety -> high THEN class --> vgood
+RULE 99. Coverage: 0.00116. Precision: 1
+IF doors -> 5more AND lug_boot -> med AND safety -> med THEN class --> good
+RULE 100. Coverage: 0.00231. Precision: 1
+IF doors -> 5more AND lug_boot -> small AND safety -> high THEN class --> good
+RULE 101. Coverage: 0.00231. Precision: 1
+IF doors -> 5more AND lug_boot -> small AND safety -> med THEN class --> acc
+RULE 102. Coverage: 0.00116. Precision: 1
+IF buying -> low AND maint -> low AND doors -> 2 AND persons -> 4 THEN class --> good
+RULE 103. Coverage: 0.00116. Precision: 1
+IF buying -> low AND maint -> med AND doors -> 2 AND persons -> 4 THEN class --> good
+RULE 104. Coverage: 0.00116. Precision: 1
+IF buying -> low AND maint -> med AND doors -> 4 AND persons -> 4 THEN class --> good
+RULE 105. Coverage: 0.00116. Precision: 1
+IF buying -> med AND maint -> low AND doors -> 2 AND persons -> 4 THEN class --> good
+RULE 106. Coverage: 0.00116. Precision: 1
+IF buying -> med AND maint -> med AND doors -> 2 AND persons -> 4 THEN class --> acc
+RULE 107. Coverage: 0.00116. Precision: 1
+IF buying -> med AND maint -> med AND doors -> 4 AND persons -> 4 THEN class --> acc
