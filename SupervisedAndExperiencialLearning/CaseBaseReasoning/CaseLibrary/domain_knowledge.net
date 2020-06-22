@@ -1,0 +1,197 @@
+% ---------------------------------------------------------------------------------
+% Sandwich Ingredient Hierarchy
+% ---------------------------------------------------------------------------------
+%
+*Vertices 96
+	1 arugula 
+	2 avocado 
+	3 bacon 
+	4 bagel 
+	5 baguette 
+	6 basil 
+	7 batavia 
+	8 beet 
+	9 "black pepper" 
+	10 bread 
+	11 "brown sugar" 
+	12 butter 
+	13 cabbage 
+	14 celery 
+	15 "cherry tomato" 
+	16 chicken 
+	17 "chicken breast" 
+	18 "chili powder" 
+	19 chive 
+	20 crab 
+	21 crabmeat 
+	22 cream 
+	23 "cream cheese" 
+	24 cucumbers 
+	25 "curry powder" 
+	26 dill 
+	27 "extra virgin olive oil" 
+	28 garlic 
+	29 goat 
+	30 "green pepper" 
+	31 gruyere 
+	32 ham 
+	33 "hard-boiled egg" 
+	34 hummus 
+	35 ketchup 
+	36 "lamb's lettuce" 
+	37 lemon 
+	38 "lemon juice" 
+	39 lettuce 
+	40 "light cream" 
+	41 lime 
+	42 mango 
+	43 mayonnaise 
+	44 mint 
+	45 mustard 
+	46 "olive oil" 
+	47 onion 
+	48 "pain de mie" 
+	49 "parma ham" 
+	50 parsley 
+	51 pepper 
+	52 pesto 
+	53 pineapple 
+	54 "pita bread" 
+	55 radish 
+	56 "red onion" 
+	57 "salad greens" 
+	58 salmon 
+	59 salt 
+	60 shrimp 
+	61 "smoked salmon" 
+	62 "soy sauce" 
+	63 "tabasco sauce" 
+	64 tofu 
+	65 tomato 
+	66 turkey 
+	67 tzatziki 
+	68 "white wine vinegar" 
+	69 "wholemeal pain de mie" 
+	70 yogurt 
+	71 vegetable 
+	72 fruit 
+	73 "cold meat" 
+	74 "red meat" 
+	75 spice 
+	76 cereals 
+	77 sugar 
+	78 "animal fats" 
+	79 "vegetal fats" 
+	80 fats 
+	81 meat 
+	82 seafood 
+	83 cheese 
+	84 egg 
+	85 legume 
+	86 sauce 
+	87 citric 
+	88 green 
+	89 fish 
+	90 fungus 
+	91 season 
+	92 lacteal 
+	93 "plant-based food" 
+	94 "animal-based food" 
+	95 food 
+	96 "sea meat" 
+*Arcs
+	10 4 
+	10 5 
+	10 6 
+	10 48 
+	10 54 
+	16 17 
+	20 21 
+	22 40 
+	32 49 
+	39 7 
+	39 36 
+	46 27 
+	47 56 
+	48 69 
+	58 61 
+	65 15 
+	71 1 
+	71 8 
+	71 13 
+	71 14 
+	71 19 
+	71 24 
+	71 26 
+	71 28 
+	71 39 
+	71 44 
+	71 47 
+	71 50 
+	71 55 
+	71 65 
+	72 2 
+	72 42 
+	72 53 
+	72 87 
+	73 32 
+	74 3 
+	75 9 
+	75 18 
+	75 25 
+	75 30 
+	75 51 
+	76 10 
+	77 11 
+	77 22 
+	78 12 
+	79 29 
+	79 46 
+	80 78 
+	80 79 
+	81 16 
+	81 66 
+	81 73 
+	81 74 
+	82 20 
+	83 23 
+	83 31 
+	84 33 
+	85 34 
+	85 64 
+	86 35 
+	86 43 
+	86 45 
+	86 52 
+	86 62 
+	86 63 
+	86 67 
+	87 37 
+	87 38 
+	87 41 
+	88 57 
+	88 71 
+	89 58 
+	90 60 
+	91 59 
+	91 68 
+	91 75 
+	91 86 
+	92 70 
+	92 83 
+	93 72 
+	93 76 
+	93 85 
+	93 88 
+	94 81 
+	94 84 
+	94 96 
+	95 77 
+	95 80 
+	95 90 
+	95 91 
+	95 92 
+	95 93 
+	95 94 
+	96 82 
+	96 89 
